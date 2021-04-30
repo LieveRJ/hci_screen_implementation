@@ -26,7 +26,7 @@ class _BookResultState extends State<BookResult> {
         body: ListView(
             children: <Widget>[
               Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 30),
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
                   child: new Container(
                       child: new Column(
                           children: <Widget>[
@@ -41,13 +41,13 @@ class _BookResultState extends State<BookResult> {
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
-                                new Text(
-                                  "View all",
-                                  style: new TextStyle(
-                                    fontSize: 20.0,
-                                  ),
-                                  textAlign: TextAlign.left,
-                                ),
+                            //     new Text(
+                            //       "View all",
+                            //       style: new TextStyle(
+                            //         fontSize: 20.0,
+                            //       ),
+                            //       textAlign: TextAlign.left,
+                            //     ),
                               ],
                             ),
                             new SizedBox(
@@ -59,7 +59,7 @@ class _BookResultState extends State<BookResult> {
                                     child: Padding(
                                       padding: const EdgeInsets.only(right: 5.0),
                                       child: new Container(
-                                        height: 150.0,
+                                        height: 100.0,
                                         decoration: new BoxDecoration(
                                             borderRadius: new BorderRadius.circular(5.0),
                                             color: Color(0xFFFD7384)),
@@ -78,7 +78,7 @@ class _BookResultState extends State<BookResult> {
                                     )),
                                 new Expanded(
                                     child: new Container(
-                                      height: 150.0,
+                                      height: 100.0,
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
@@ -136,7 +136,7 @@ class _BookResultState extends State<BookResult> {
                                     )),
                                 new Expanded(
                                     child: new Container(
-                                      height: 150.0,
+                                      height: 100.0,
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
@@ -194,7 +194,7 @@ class _BookResultState extends State<BookResult> {
                               ],
                             ),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 30),
+                              padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
                               child: new Container(
                                   child: new Column(
                                     children: <Widget>[
@@ -209,83 +209,65 @@ class _BookResultState extends State<BookResult> {
                                             ),
                                             textAlign: TextAlign.left,
                                           ),
-                                          new Text(
-                                            "View all",
-                                            style: new TextStyle(
-                                              fontSize: 20.0,
-                                            ),
-                                            textAlign: TextAlign.left,
-                                          ),
+                                          // new Text(
+                                          //   "View all",
+                                          //   style: new TextStyle(
+                                          //     fontSize: 20.0,
+                                          //   ),
+                                          //   textAlign: TextAlign.left,
+                                          // ),
                                         ],
                                       ),
                                       new SizedBox(
-                                        height: 10.0,
+                                        height: 7.0,
                                       ),
                                       Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                                         children: <Widget>[
                                           ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 180, height: 300),
-                                            child: ElevatedButton.icon(
-                                                style: ButtonStyle(
-                                                ),
-                                                icon: Icon(
-                                                  Icons.menu_book_rounded,
-                                                  color: Colors.blueGrey[900],
-                                                ),
-                                                label: Text('Book1')
+                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                            child: Container(
+                                              child: Image (
+                                                image: AssetImage("assets/origin.jpeg"),
+                                                width: 100,
+                                              ),
                                             ),
                                           ),
                                           ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 180, height: 300),
-                                            child: ElevatedButton.icon(
-                                                style: ButtonStyle(
-                                                ),
-                                                icon: Icon(
-                                                  Icons.menu_book_rounded,
-                                                  color: Colors.blueGrey[900],
-                                                ),
-                                                label: Text('Book2')
+                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                            child: Container(
+                                              child: Image (
+                                                image: AssetImage("assets/da_vinci_code.jpeg"),
+                                                width: 100,
+                                              ),
                                             ),
                                           ),
                                           ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 180, height: 300),
-                                            child: ElevatedButton.icon(
-                                                style: ButtonStyle(
-
-                                                ),
-                                                icon: Icon(
-                                                  Icons.menu_book_rounded,
-                                                  color: Colors.blueGrey[900],
-                                                ),
-                                                label: Text('Book3')
+                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                            child: Container(
+                                              child: Image (
+                                                image: AssetImage("assets/angels_demons.jpeg"),
+                                                width: 100,
+                                              ),
                                             ),
                                           ),
                                           ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 180, height: 300),
-                                            child: ElevatedButton.icon(
-                                                style: ButtonStyle(
-
-                                                ),
-                                                icon: Icon(
-                                                  Icons.menu_book_rounded,
-                                                  color: Colors.blueGrey[900],
-                                                ),
-                                                label: Text('Book2')
+                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                            child: Container(
+                                              child: Image (
+                                                image: AssetImage("assets/lost_symbol.jpeg"),
+                                                width: 100,
+                                              ),
                                             ),
                                           ),
                                           ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 180, height: 300),
-                                            child: ElevatedButton.icon(
-                                                style: ButtonStyle(
-
-                                                ),
-                                                icon: Icon(
-                                                  Icons.menu_book_rounded,
-                                                  color: Colors.blueGrey[900],
-                                                ),
-                                                label: Text('Book2')
+                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                            child: Container(
+                                              child: Image (
+                                                image: AssetImage("assets/inferno.jpeg"),
+                                                width: 100,
+                                              ),
                                             ),
                                           ),
                                         ],
@@ -297,7 +279,7 @@ class _BookResultState extends State<BookResult> {
                                           Padding(
                                             padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
                                             child: Text(
-                                              "Origin -- Dan Brown",
+                                              "Origin\nDan Brown",
                                               style: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.bold,
@@ -307,7 +289,7 @@ class _BookResultState extends State<BookResult> {
                                           Padding(
                                             padding: const EdgeInsets.all(2.2),
                                             child: Text(
-                                              "De Da Vinci Code -- Dan Brown",
+                                              "De Da Vinci Code\nDan Brown",
                                               style: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.bold,
@@ -317,7 +299,7 @@ class _BookResultState extends State<BookResult> {
                                           Padding(
                                             padding: const EdgeInsets.all(2.2),
                                             child: Text(
-                                              "Angels and Demons -- Dan Brown",
+                                              'Angels and Demons\nDan Brown',
                                               style: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.bold,
@@ -327,7 +309,7 @@ class _BookResultState extends State<BookResult> {
                                           Padding(
                                             padding: const EdgeInsets.all(2.2),
                                             child: Text(
-                                              "The Last Symbol -- Dan Brown",
+                                              "The Lost Symbol\nDan Brown",
                                               style: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.bold,
@@ -337,7 +319,7 @@ class _BookResultState extends State<BookResult> {
                                           Padding(
                                             padding: const EdgeInsets.all(2.2),
                                             child: Text(
-                                              "Inferno -- Dan Brown",
+                                              "Inferno\nDan Brown",
                                               style: TextStyle(
                                                 color: Colors.black,
                                                 fontWeight: FontWeight.bold,
@@ -350,7 +332,7 @@ class _BookResultState extends State<BookResult> {
                                   )
                               ),
                             ),
-                          ]
+                        ]
                       )
                   )
               )

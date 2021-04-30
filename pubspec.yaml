@@ -48,6 +48,12 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/oba_logo.jpeg
+    - assets/return.png
+    - assets/origin.jpeg
+    - assets/angels_demons.jpeg
+    - assets/da_vinci_code.jpeg
+    - assets/inferno.jpeg
+    - assets/lost_symbol.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
