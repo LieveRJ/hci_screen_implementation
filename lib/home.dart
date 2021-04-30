@@ -117,7 +117,7 @@ class _HomeState extends State<Home> {
               primary: Colors.indigo[300],
             ),
             onPressed: () {
-              Navigator.pushNamed(context, '/bookresult');
+              Navigator.pushNamed(context, '/floorlayout1');
             },
             icon: Icon(
               Icons.map_outlined,
