@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Layout1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final appTitle = "Books";
+    final appTitle = "Layout";
     return Scaffold(
         appBar: AppBar(
           title: Text('Click the buttons to see floor layout'),

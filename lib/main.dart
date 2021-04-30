@@ -11,6 +11,9 @@ import 'package:hci_screen_implementation/media.dart';
 import 'package:hci_screen_implementation/floorlayout1.dart';
 import 'package:hci_screen_implementation/floorlayout2.dart';
 import 'package:hci_screen_implementation/floorlayout3.dart';
+import 'package:hci_screen_implementation/rent.dart';
+import 'package:hci_screen_implementation/return.dart';
+import 'package:hci_screen_implementation/info.dart';
 
 
 void main() => runApp(MaterialApp(
@@ -26,5 +29,8 @@ void main() => runApp(MaterialApp(
     '/floorlayout1': (context) => Layout1(),
     '/floorlayout2': (context) => Layout2(),
     '/floorlayout3': (context) => Layout3(),
+    '/rent': (context) => Rent(),
+    '/return': (context) => Return(),
+    '/info': (context) => Information(),
   },
 ));

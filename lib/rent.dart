@@ -20,53 +20,77 @@ class _RentState extends State<Rent> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Would you like to rent or return?'),
+        title: Text('Instructions to rent an item'),
         centerTitle: true,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.blue,
       ),
-      body: GridView.count(
-        primary: false,
-        padding: const EdgeInsets.all(150),
-        crossAxisSpacing: 60,
-        mainAxisSpacing: 59,
-        crossAxisCount: 2,
-        childAspectRatio: 2,
+      body: ListView(
         children: <Widget>[
-          ElevatedButton.icon( //BOOKS
-              style: ElevatedButton.styleFrom(
-                primary: Colors.lightBlueAccent[100],
+          Padding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 15.0, vertical: 10),
+              child: new Container(
+                child: new Column(
+                    children: <Widget>[
+                      Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                        ],
+                      ),
+                      new SizedBox(
+                        height: 10.0,
+                      ),
+                      Row(
+                        children: <Widget>[
+                          new Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.only(right: 5.0),
+                                child: new Container(
+                                  height: 200.0,
+                                  decoration: new BoxDecoration(
+                                    borderRadius: new BorderRadius.circular(
+                                        5.0),
+                                    color: Colors.black.withOpacity(0.0),),
+                                  child: new Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      new Icon(
+                                        Icons.drive_eta,
+                                        color: Colors.white,
+                                      ),
+                                      new Text(
+                                          "Instructions \n 1. Select an item to rent \n 2. Use the scanner button to the right \n 3. Scan the barcode on the item \n 4. Confirm your login and that you want to rent \n 5. Enjoy your item!",
+                                          style: new TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 20))
+                                    ],
+                                  ),
+                                ),
+                              ))]),
+                          Row(
+                            children: <Widget>[
+                              new Expanded(
+                                child: Padding(
+                                  padding: const EdgeInsets.symmetric(horizontal: 60.0, vertical: 20),
+                                  child: new Container(
+                                    height: 140.0,
+                                    child: ElevatedButton(
+                                        style: ElevatedButton.styleFrom(
+                                          primary: Colors.lightGreen[300],
+                                        ),
+                                        onPressed: () {
+                                        },
+                                        child: Text("Click here to scan your barcode", style: new TextStyle(color: Colors.white, fontSize:40))
+                                    ),
+                                  ),
+                                ),
+                              )]),
+                        ],
+                ),
               ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/bookresult');
-              },
-              icon: Icon(
-                Icons.music_video_rounded,
-                color: Colors.blueGrey[900],
-                size: 100,
               ),
-              label: Text(
-                  'MUSIC', style: TextStyle(
-                  color: Colors.blueGrey[900], fontSize: 30)
-              )
-          ),
-          ElevatedButton.icon( //MUSIC
-            style: ElevatedButton.styleFrom(
-              primary: Colors.red[300],
-            ),
-            onPressed: () {
-              Navigator.pushNamed(context, '/bookresult');
-            },
-            icon: Icon(
-              Icons.local_movies_rounded,
-              color: Colors.blueGrey[900],
-              size: 100.0,
-            ),
-            label: Text(
-                'MOVIES',
-                style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
-            ),
-          ),
-        ],
+         ],
       ),
     );
   }

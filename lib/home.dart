@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
               primary: Colors.deepOrange[300],
             ),
             onPressed: () {
-              Navigator.pushNamed(context, '/bookresult');
+              Navigator.pushNamed(context, '/info');
             },
             icon: Icon(
               Icons.info_outline_rounded,
@@ -85,7 +85,7 @@ class _HomeState extends State<Home> {
               primary: Colors.cyan[600],
             ),
             onPressed: () {
-              Navigator.pushNamed(context, '/bookresult');
+              Navigator.pushNamed(context, '/rent');
             },
             icon: Icon(
               Icons.keyboard_return_rounded,
@@ -101,7 +101,7 @@ class _HomeState extends State<Home> {
               primary: Colors.green[300],
             ),
             onPressed: () {
-              Navigator.pushNamed(context, '/bookresult');
+              Navigator.pushNamed(context, '/return');
             },
             icon: Icon(
               Icons.double_arrow_rounded,
