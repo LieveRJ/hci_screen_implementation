@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class RentReturn extends StatefulWidget {
+class Media extends StatefulWidget {
   @override
-  _RentReturnState createState() => _RentReturnState();
+  _MediaOptionState createState() => _MediaOptionState();
 }
 
-class _RentReturnState extends State<RentReturn> {
+class _MediaOptionState extends State<Media> {
   @override
   void initState(){
     super.initState();
@@ -40,12 +40,12 @@ class _RentReturnState extends State<RentReturn> {
                 Navigator.pushNamed(context, '/bookresult');
               },
               icon: Icon(
-                Icons.keyboard_return_rounded,
+                Icons.music_video_rounded,
                 color: Colors.blueGrey[900],
                 size: 100,
               ),
               label: Text(
-                  'RENT', style: TextStyle(
+                  'MUSIC', style: TextStyle(
                   color: Colors.blueGrey[900], fontSize: 30)
               )
           ),
@@ -57,12 +57,12 @@ class _RentReturnState extends State<RentReturn> {
               Navigator.pushNamed(context, '/bookresult');
             },
             icon: Icon(
-              Icons.double_arrow_rounded,
+              Icons.local_movies_rounded,
               color: Colors.blueGrey[900],
               size: 100.0,
             ),
             label: Text(
-                'RETURN',
+                'MOVIES',
                 style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),

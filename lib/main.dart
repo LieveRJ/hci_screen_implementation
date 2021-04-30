@@ -7,10 +7,11 @@ import 'package:hci_screen_implementation/welcome.dart';
 import 'package:hci_screen_implementation/home.dart';
 // import 'package:hci_screen_implementation/loading.dart';
 import 'package:hci_screen_implementation/bookresult.dart';
-import 'package:hci_screen_implementation/rent_return.dart';
+import 'package:hci_screen_implementation/media.dart';
 
 
 void main() => runApp(MaterialApp(
+  debugShowCheckedModeBanner: false,
   initialRoute: '/welcome',
   routes: {
     // '/': (context) => Loading(),
@@ -18,6 +19,6 @@ void main() => runApp(MaterialApp(
     '/home': (context) => Home(),
     '/booksearch': (context) => BookSearch(),
     '/bookresult': (context) => BookResult(),
-    '/rent_return': (context) => RentReturn(),
+    '/media': (context) => Media(),
   },
 ));

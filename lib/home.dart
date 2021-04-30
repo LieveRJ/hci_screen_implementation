@@ -26,9 +26,9 @@ class _HomeState extends State<Home> {
       ),
       body: GridView.count(
         primary: false,
-        padding: const EdgeInsets.all(150),
-        crossAxisSpacing: 60,
-        mainAxisSpacing: 59,
+        padding: const EdgeInsets.all(50),
+        crossAxisSpacing: 20,
+        mainAxisSpacing: 20,
         crossAxisCount: 3,
         childAspectRatio: 2,
         children: <Widget>[
@@ -42,10 +42,10 @@ class _HomeState extends State<Home> {
               icon: Icon(
                 Icons.menu_book_rounded,
                 color: Colors.blueGrey[900],
-                size: 50,
+                size: 100,
               ),
               label: Text(
-                  'BOOKS', style: TextStyle(color: Colors.blueGrey[900], fontSize: 14)
+                  'BOOKS', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
               )
           ),
           ElevatedButton.icon(                                          //MUSIC
@@ -53,15 +53,15 @@ class _HomeState extends State<Home> {
               primary: Colors.red[300],
             ),
             onPressed: () {
-              Navigator.pushNamed(context, '/bookresult');
+              Navigator.pushNamed(context, '/media');
             },
             icon: Icon(
-              Icons.music_video_rounded,
+              Icons.perm_media_outlined,
               color: Colors.blueGrey[900],
-              size: 50.0,
+              size: 100.0,
             ),
             label: Text(
-                'MUSIC', style: TextStyle(color: Colors.blueGrey[900], fontSize: 14)
+                'MEDIA', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),
           ElevatedButton.icon(                                         //MOVIES
@@ -72,28 +72,28 @@ class _HomeState extends State<Home> {
               Navigator.pushNamed(context, '/bookresult');
             },
             icon: Icon(
-              Icons.local_movies_rounded,
+              Icons.info_outline_rounded,
               color: Colors.blueGrey[900],
-              size: 50.0,
+              size: 100.0,
             ),
             label: Text(
-                'MOVIES', style: TextStyle(color: Colors.blueGrey[900], fontSize: 14)
+                'INFO', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),
           ElevatedButton.icon(                                         //MEDIA
             style: ElevatedButton.styleFrom(
-              primary: Colors.cyan[800],
+              primary: Colors.cyan[600],
             ),
             onPressed: () {
               Navigator.pushNamed(context, '/bookresult');
             },
             icon: Icon(
-              Icons.perm_media_outlined,
+              Icons.keyboard_return_rounded,
               color: Colors.blueGrey[900],
-              size: 50.0,
+              size: 100,
             ),
             label: Text(
-                'MEDIA', style: TextStyle(color: Colors.blueGrey[900], fontSize: 14)
+                'RENT', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),
           ElevatedButton.icon(                                         //RENT/RETURN
@@ -101,15 +101,15 @@ class _HomeState extends State<Home> {
               primary: Colors.green[300],
             ),
             onPressed: () {
-              Navigator.pushNamed(context, '/rent_return');
+              Navigator.pushNamed(context, '/bookresult');
             },
             icon: Icon(
-              Icons.compare_arrows_rounded,
+              Icons.double_arrow_rounded,
               color: Colors.blueGrey[900],
-              size: 50.0,
+              size: 100.0,
             ),
             label: Text(
-                'RETURN', style: TextStyle(color: Colors.blueGrey[900], fontSize: 14)
+                'RETURN', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),
           ElevatedButton.icon(                                         //AUDIO
@@ -122,10 +122,10 @@ class _HomeState extends State<Home> {
             icon: Icon(
               Icons.map_outlined,
               color: Colors.blueGrey[900],
-              size: 50.0,
+              size: 70.0,
             ),
             label: Text(
-                'LIBRARY MAP', style: TextStyle(color: Colors.blueGrey[900], fontSize: 14)
+                'LIBRARY MAP', style: TextStyle(color: Colors.blueGrey[900], fontSize: 25)
             ),
           )
         ],
