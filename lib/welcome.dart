@@ -7,6 +7,7 @@ class Welcome extends StatefulWidget {
 }
 
 class _WelcomeState extends State<Welcome> {
+
   @override
   void initState(){
     super.initState();
@@ -15,34 +16,36 @@ class _WelcomeState extends State<Welcome> {
       DeviceOrientation.landscapeLeft,
     ]);
   }
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('OBA User Interface'),
-        centerTitle: true,
-        backgroundColor: Colors.red,
-      ),
-      // body: Center(
-      //   child: Image.asset('assets/oba_logo.jpeg'),
-      //   ),
-      body: Center(
-        child: Text(
-          'Welcome to the OBA!',
-          style: TextStyle(
-            fontSize: 50,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.red,
+      Widget build(BuildContext context) {
+        return Scaffold(
+          appBar: AppBar(
+            title: Text('OBA User Interface'),
+            centerTitle: true,
+            backgroundColor: Colors.red,
           ),
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, '/home');
-        },
-        child: Text('Menu'),
-        backgroundColor: Colors.red,
-      ),
-    );
+          // body: Center(
+          //   child: Image.asset('assets/oba_logo.jpeg'),
+          //   ),
+          body: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: () => Navigator.pushNamed(context, '/home'),
+                child: Center(
+                    child: Text('Welcome to the OBA!'
+                        '\nTap the screen to start',
+                      style: TextStyle(
+                      fontSize: 50,
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 2.0,
+                      color: Colors.red,
+                    ),
+                  ),
+                ),
+          ),
+        );
   }
 }
+
+// return GestureDetector(
+// onTap () {
+//   Navigator.pushNamed(context, '/home')
+// }
