@@ -71,7 +71,7 @@ class _BookResultState extends State<BookResult> {
                                               color: Colors.white,
                                             ),
                                             new Text("Fiction",
-                                                style: new TextStyle(color: Colors.white))
+                                                style: new TextStyle(color: Colors.white, fontSize: 24))
                                           ],
                                         ),
                                       ),
@@ -100,7 +100,7 @@ class _BookResultState extends State<BookResult> {
                                                       ),
                                                     ),
                                                     new Text('Novel',
-                                                        style: new TextStyle(color: Colors.white))
+                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
                                                   ],
                                                 ),
                                               ),
