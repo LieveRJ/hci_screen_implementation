@@ -48,7 +48,7 @@ class _HomeState extends State<Home> {
                   'BOOKS', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
               )
           ),
-          ElevatedButton.icon(                                          //MUSIC
+          ElevatedButton.icon(                                          //MEDIA
             style: ElevatedButton.styleFrom(
               primary: Colors.red[300],
             ),
@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
                 'MEDIA', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),
-          ElevatedButton.icon(                                         //MOVIES
+          ElevatedButton.icon(                                         //INFO
             style: ElevatedButton.styleFrom(
               primary: Colors.deepOrange[300],
             ),
@@ -80,7 +80,7 @@ class _HomeState extends State<Home> {
                 'INFO', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),
-          ElevatedButton.icon(                                         //MEDIA
+          ElevatedButton.icon(                                         //RENT
             style: ElevatedButton.styleFrom(
               primary: Colors.cyan[600],
             ),
@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
                 'RENT', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),
-          ElevatedButton.icon(                                         //RENT/RETURN
+          ElevatedButton.icon(                                         //RETURN
             style: ElevatedButton.styleFrom(
               primary: Colors.green[300],
             ),
@@ -112,7 +112,7 @@ class _HomeState extends State<Home> {
                 'RETURN', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
             ),
           ),
-          ElevatedButton.icon(                                         //AUDIO
+          ElevatedButton.icon(                                         //LAYOUT
             style: ElevatedButton.styleFrom(
               primary: Colors.indigo[300],
             ),

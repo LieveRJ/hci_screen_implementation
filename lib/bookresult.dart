@@ -125,7 +125,7 @@ class _BookResultState extends State<BookResult> {
                                                       ),
                                                     ),
                                                     new Text('Mystery',
-                                                        style: new TextStyle(color: Colors.white))
+                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
                                                   ],
                                                 ),
                                               ),
@@ -158,7 +158,7 @@ class _BookResultState extends State<BookResult> {
                                                       ),
                                                     ),
                                                     new Text('Thriller',
-                                                        style: new TextStyle(color: Colors.white))
+                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
                                                   ],
                                                 ),
                                               ),
@@ -182,7 +182,7 @@ class _BookResultState extends State<BookResult> {
                                                       ),
                                                     ),
                                                     new Text('Narrative',
-                                                        style: new TextStyle(color: Colors.white))
+                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
                                                   ],
                                                 ),
                                               ),
@@ -222,122 +222,210 @@ class _BookResultState extends State<BookResult> {
                                         height: 7.0,
                                       ),
                                       Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                        children: <Widget>[
-                                          ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
-                                            child: Container(
-                                              child: Image (
-                                                image: AssetImage("assets/origin.jpeg"),
+                                          children: <Widget>[
+                                          new Expanded(
+                                            child: new Container(
+                                              height: 350,
+                                              width: 100,
+                                              child: Column(
+                                                children: <Widget>[
+                                                  Expanded(
+                                                    child: Padding(
+                                                      padding:
+                                                      const EdgeInsets.only(bottom: 2.5, right: 2.5,),
+                                                      child: new Container(
+                                                        constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                                        child: new Container(
+                                                          child: Image (
+                                                            image: AssetImage("assets/origin.jpeg"),
+                                                            width: 100,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  Expanded(
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                                                      child: Text(
+                                                        "Origin\nDan Brown",
+                                                         style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontWeight: FontWeight.bold,
+                                                          fontSize: 15,
+                                                          ),
+                                                         ),
+                                                        ),
+                                                       ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                              ),
+                                                  new Expanded(
+                                                    child: new Container(
+                                                      height: 350,
+                                                      width: 100,
+                                                      child: Column(
+                                                        children: <Widget>[
+                                                          Expanded(
+                                                            child: Padding(
+                                                              padding:
+                                                              const EdgeInsets.only(bottom: 2.5, right: 2.5,),
+                                                              child: new Container(
+                                                                constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                                                child: new Container(
+                                                                  child: Image (
+                                                                    image: AssetImage("assets/da_vinci_code.jpeg"),
+                                                                    width: 100,
+                                                                  ),
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                          Expanded(
+                                                            child: Padding(
+                                                              padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                                                              child: Text(
+                                                                "De Da Vinci Code\nDan Brown",
+                                                                style: TextStyle(
+                                                                  color: Colors.black,
+                                                                  fontWeight: FontWeight.bold,
+                                                                  fontSize: 15,
+                                                                ),
+                                                              ),
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ),
+                                            new Expanded(
+                                              child: new Container(
+                                                height: 350,
                                                 width: 100,
+                                                child: Column(
+                                                  children: <Widget>[
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding:
+                                                        const EdgeInsets.only(bottom: 2.5, right: 2.5,),
+                                                        child: new Container(
+                                                          constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                                          child: new Container(
+                                                            child: Image (
+                                                              image: AssetImage("assets/angels_demons.jpeg"),
+                                                              width: 100,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                                                        child: Text(
+                                                          'Angels and Demons\nDan Brown',
+                                                          style: TextStyle(
+                                                            color: Colors.black,
+                                                            fontWeight: FontWeight.bold,
+                                                            fontSize: 15,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
-                                            child: Container(
-                                              child: Image (
-                                                image: AssetImage("assets/da_vinci_code.jpeg"),
+                                            new Expanded(
+                                              child: new Container(
+                                                height: 350,
                                                 width: 100,
+                                                child: Column(
+                                                  children: <Widget>[
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding:
+                                                        const EdgeInsets.only(bottom: 2.5, right: 2.5,),
+                                                        child: new Container(
+                                                          constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                                          child: new Container(
+                                                            child: Image (
+                                                              image: AssetImage("assets/lost_symbol.jpeg"),
+                                                              width: 100,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                                                        child: Text(
+                                                          "The Lost Symbol\nDan Brown",
+                                                          style: TextStyle(
+                                                            color: Colors.black,
+                                                            fontWeight: FontWeight.bold,
+                                                            fontSize: 15,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
-                                            child: Container(
-                                              child: Image (
-                                                image: AssetImage("assets/angels_demons.jpeg"),
+                                            new Expanded(
+                                              child: new Container(
+                                                height: 350,
                                                 width: 100,
+                                                child: Column(
+                                                  children: <Widget>[
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding:
+                                                        const EdgeInsets.only(bottom: 2.5, right: 2.5,),
+                                                        child: new Container(
+                                                          constraints: BoxConstraints.tightFor(width: 100, height: 165),
+                                                          child: new Container(
+                                                            child: Image (
+                                                              image: AssetImage("assets/inferno.jpeg"),
+                                                              width: 100,
+                                                            ),
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                    Expanded(
+                                                      child: Padding(
+                                                        padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                                                        child: Text(
+                                                          "Inferno\nDan Brown",
+                                                          style: TextStyle(
+                                                            color: Colors.black,
+                                                            fontWeight: FontWeight.bold,
+                                                            fontSize: 15,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ),
+                                          ],
                                           ),
-                                          ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
-                                            child: Container(
-                                              child: Image (
-                                                image: AssetImage("assets/lost_symbol.jpeg"),
-                                                width: 100,
-                                              ),
-                                            ),
-                                          ),
-                                          ConstrainedBox(
-                                            constraints: BoxConstraints.tightFor(width: 100, height: 165),
-                                            child: Container(
-                                              child: Image (
-                                                image: AssetImage("assets/inferno.jpeg"),
-                                                width: 100,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                        children: <Widget>[
-                                          Padding(
-                                            padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                                            child: Text(
-                                              "Origin\nDan Brown",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.all(2.2),
-                                            child: Text(
-                                              "De Da Vinci Code\nDan Brown",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.all(2.2),
-                                            child: Text(
-                                              'Angels and Demons\nDan Brown',
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.all(2.2),
-                                            child: Text(
-                                              "The Lost Symbol\nDan Brown",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.all(2.2),
-                                            child: Text(
-                                              "Inferno\nDan Brown",
-                                              style: TextStyle(
-                                                color: Colors.black,
-                                                fontWeight: FontWeight.bold,
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  )
+                                      ],
+                                  ),
                               ),
                             ),
-                        ]
-                      )
-                  )
-              )
-            ]
-        ));
+                      ]
+                      ),
+              ),
+        )
+        ]
+    )
+    );
   }
 }
 

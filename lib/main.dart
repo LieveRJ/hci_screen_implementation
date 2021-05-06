@@ -14,6 +14,8 @@ import 'package:hci_screen_implementation/floorlayout3.dart';
 import 'package:hci_screen_implementation/rent.dart';
 import 'package:hci_screen_implementation/return.dart';
 import 'package:hci_screen_implementation/info.dart';
+import 'package:hci_screen_implementation/music.dart';
+import 'package:hci_screen_implementation/movies.dart';
 
 
 void main() => runApp(MaterialApp(
@@ -32,5 +34,7 @@ void main() => runApp(MaterialApp(
     '/rent': (context) => Rent(),
     '/return': (context) => Return(),
     '/info': (context) => Information(),
+    '/music': (context) => Music(),
+    '/movies': (context) => Movies(),
   },
 ));

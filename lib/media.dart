@@ -37,7 +37,7 @@ class _MediaOptionState extends State<Media> {
                 primary: Colors.lightBlueAccent[100],
               ),
               onPressed: () {
-                Navigator.pushNamed(context, '/bookresult');
+                Navigator.pushNamed(context, '/music');
               },
               icon: Icon(
                 Icons.music_video_rounded,
@@ -54,7 +54,7 @@ class _MediaOptionState extends State<Media> {
               primary: Colors.red[300],
             ),
             onPressed: () {
-              Navigator.pushNamed(context, '/bookresult');
+              Navigator.pushNamed(context, '/movies');
             },
             icon: Icon(
               Icons.local_movies_rounded,
