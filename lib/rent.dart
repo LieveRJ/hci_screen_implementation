@@ -16,7 +16,6 @@ class _RentState extends State<Rent> {
     ]);
   }
   Widget build(BuildContext context) {
-    final appTitle = "Library Search";
 
     return Scaffold(
       appBar: AppBar(
@@ -79,7 +78,7 @@ class _RentState extends State<Rent> {
                                         style: ElevatedButton.styleFrom(
                                           primary: Colors.lightGreen[300],
                                         ),
-                                        onPressed: () {
+                                        onPressed: () {Navigator.pushNamed(context, '/camera_screen');
                                         },
                                         child: Text("Click here to scan your barcode", style: new TextStyle(color: Colors.white, fontSize:40))
                                     ),

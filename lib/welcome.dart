@@ -6,7 +6,9 @@ class Welcome extends StatefulWidget {
   _WelcomeState createState() => _WelcomeState();
 }
 
-class _WelcomeState extends State<Welcome> {
+class _WelcomeState extends State<Welcome>{
+  double opacityLevel = 1.0;
+  bool _visible = true;
 
   @override
   void initState(){
@@ -16,36 +18,44 @@ class _WelcomeState extends State<Welcome> {
       DeviceOrientation.landscapeLeft,
     ]);
   }
-      Widget build(BuildContext context) {
-        return Scaffold(
+  Widget build(BuildContext context) {
+    return Scaffold(
           appBar: AppBar(
             title: Text('OBA User Interface'),
             centerTitle: true,
             backgroundColor: Colors.red,
           ),
-          // body: Center(
-          //   child: Image.asset('assets/oba_logo.jpeg'),
-          //   ),
           body: GestureDetector(
-                behavior: HitTestBehavior.opaque,
-                onTap: () => Navigator.pushNamed(context, '/home'),
-                child: Center(
-                    child: Text('Welcome to the OBA!'
-                        '\nTap the screen to start',
-                      style: TextStyle(
-                      fontSize: 50,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 2.0,
-                      color: Colors.red,
-                    ),
+              behavior: HitTestBehavior.opaque,
+              onTap: () => Navigator.pushNamed(context, '/home'),
+              child: AnimatedOpacity(
+                  duration: Duration(seconds: 10),
+                  opacity: _visible ? 1.0 : 0.0,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                            child: Image.asset('assets/oba_logo.jpeg',
+                              width: 300,
+                              height: 300,
+                            ),
+                        ),
+                        Container(
+                            child: Text(' Welcome to the OBA!'
+                                '\nTap the screen to start',
+                                style: TextStyle(
+                                fontSize: 50,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 2.0,
+                                color: Colors.red,
+                              ),
+                            ),
+                            ),
+                    ],
                   ),
-                ),
+              ),
           ),
-        );
+    );
   }
 }
-
-// return GestureDetector(
-// onTap () {
-//   Navigator.pushNamed(context, '/home')
-// }

@@ -1,8 +1,9 @@
 // import 'dart:js';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:hci_screen_implementation/booksearch.dart';
+import 'package:hci_screen_implementation/camera_screen.dart';
+import 'package:hci_screen_implementation/preview_screen.dart';
 import 'package:hci_screen_implementation/welcome.dart';
 import 'package:hci_screen_implementation/home.dart';
 // import 'package:hci_screen_implementation/loading.dart';
@@ -16,7 +17,6 @@ import 'package:hci_screen_implementation/return.dart';
 import 'package:hci_screen_implementation/info.dart';
 import 'package:hci_screen_implementation/music.dart';
 import 'package:hci_screen_implementation/movies.dart';
-
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
@@ -36,5 +36,8 @@ void main() => runApp(MaterialApp(
     '/info': (context) => Information(),
     '/music': (context) => Music(),
     '/movies': (context) => Movies(),
+    '/camera_screen': (context) => CameraScreen(),
+    '/preview_screen': (context) => PreviewScreen(),
+
   },
 ));
