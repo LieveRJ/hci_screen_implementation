@@ -14,7 +14,7 @@ class Information extends StatelessWidget {
         body: ListView(
             children: <Widget>[
               Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 30),
                   child: new Container(
                       child: new Column(
                           children: <Widget>[
@@ -23,16 +23,16 @@ class Information extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 new Text(
-                                  "Opening times",
+                                  "    Opening times",
                                   style: new TextStyle(
-                                    fontSize: 30.0,
+                                    fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
                                 new Text(
-                                  "Additional Information",
+                                  "Additional Information     ",
                                   style: new TextStyle(
-                                    fontSize: 30.0,
+                                    fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
                                   ),
                                   textAlign: TextAlign.right,
                                 ),
@@ -56,7 +56,7 @@ class Information extends StatelessWidget {
                                           children: <Widget>[
                                             new Icon(
                                               Icons.drive_eta,
-                                              color: Colors.white,
+                                              color: Colors.black,
                                             ),
                                             new Text("MONDAY: 10:00 - 22:00 \n \n"
                                                 "TUESDAY: 10:00 - 22:00 \n \n"
@@ -81,7 +81,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5,),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0XFF80CBC4),
+                                                    color: Color(0xFFEF5350),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -90,11 +90,11 @@ class Information extends StatelessWidget {
                                                       padding: const EdgeInsets.only(right: 8.0),
                                                       child: new Icon(
                                                         Icons.lock_outline_rounded,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                     new Text('Holidays',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 25))
+                                                        style: new TextStyle(color: Colors.black, fontSize: 25))
                                                   ],
                                                 ),
                                               ),
@@ -106,7 +106,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0XFF80CBC4),
+                                                    color: Color(0xFFEF5350),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -115,11 +115,11 @@ class Information extends StatelessWidget {
                                                       padding: const EdgeInsets.only(right: 8.0),
                                                       child: new Icon(
                                                         Icons.computer_rounded,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                     new Text('Computers and Wifi',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 25))
+                                                        style: new TextStyle(color: Colors.black, fontSize: 25))
                                                   ],
                                                 ),
                                               ),
@@ -131,7 +131,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0XFF80CBC4),
+                                                    color: Color(0xFFEF5350),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -140,11 +140,11 @@ class Information extends StatelessWidget {
                                                       padding: const EdgeInsets.only(right: 8.0),
                                                       child: new Icon(
                                                         Icons.local_print_shop_rounded,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                     new Text('Print and Copying',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 25))
+                                                        style: new TextStyle(color: Colors.black, fontSize: 25))
                                                   ],
                                                 ),
                                               ),
@@ -156,7 +156,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0XFF80CBC4),
+                                                    color: Color(0xFFEF5350),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -165,11 +165,11 @@ class Information extends StatelessWidget {
                                                       padding: const EdgeInsets.only(right: 8.0),
                                                       child: new Icon(
                                                         Icons.card_membership_outlined,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                     new Text('Library membership',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 25))
+                                                        style: new TextStyle(color: Colors.black, fontSize: 25))
                                                   ],
                                                 ),
                                               ),
@@ -181,7 +181,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(top: 2.5, right: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0XFF80CBC4),
+                                                    color: Color(0xFFEF5350),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -190,11 +190,11 @@ class Information extends StatelessWidget {
                                                       padding: const EdgeInsets.only(right: 8.0),
                                                       child: new Icon(
                                                         Icons.beenhere,
-                                                        color: Colors.white,
+                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                     new Text('FAQ',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 25))
+                                                        style: new TextStyle(color: Colors.black, fontSize: 25))
                                                   ],
                                                 ),
                                               ),
@@ -202,17 +202,16 @@ class Information extends StatelessWidget {
                                           ),
                                         ],
                                       ),
-                                    )),
-
-                                                  ],
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-    ),
-                                      ],
                                     )
-                                  );
-
+                                ),
+                              ],
+                            ),
+                          ],
+                      ),
+                  ),
+              )
+            ]
+        )
+    );
   }
 }

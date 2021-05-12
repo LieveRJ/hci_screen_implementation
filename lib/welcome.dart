@@ -30,7 +30,7 @@ class _WelcomeState extends State<Welcome> {
                 behavior: HitTestBehavior.opaque,
                 onTap: () => Navigator.pushNamed(context, '/home'),
                 child: Center(
-                    child: Text('Welcome to the OBA!'
+                    child: Text(' Welcome to the OBA!'
                         '\nTap the screen to start',
                       style: TextStyle(
                       fontSize: 50,

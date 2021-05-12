@@ -26,7 +26,7 @@ class _MediaOptionState extends State<Media> {
       ),
       body: GridView.count(
         primary: false,
-        padding: const EdgeInsets.all(150),
+        padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 100),
         crossAxisSpacing: 60,
         mainAxisSpacing: 59,
         crossAxisCount: 2,
@@ -34,36 +34,36 @@ class _MediaOptionState extends State<Media> {
         children: <Widget>[
           ElevatedButton.icon( //BOOKS
               style: ElevatedButton.styleFrom(
-                primary: Colors.lightBlueAccent[100],
+                primary: Colors.teal[200],
               ),
               onPressed: () {
                 Navigator.pushNamed(context, '/music');
               },
               icon: Icon(
                 Icons.music_video_rounded,
-                color: Colors.blueGrey[900],
+                color: Colors.black,
                 size: 100,
               ),
               label: Text(
                   'MUSIC', style: TextStyle(
-                  color: Colors.blueGrey[900], fontSize: 30)
+                  color: Colors.black, fontSize: 30)
               )
           ),
           ElevatedButton.icon( //MUSIC
             style: ElevatedButton.styleFrom(
-              primary: Colors.red[300],
+              primary: Colors.orange[200],
             ),
             onPressed: () {
               Navigator.pushNamed(context, '/movies');
             },
             icon: Icon(
               Icons.local_movies_rounded,
-              color: Colors.blueGrey[900],
+              color: Colors.black,
               size: 100.0,
             ),
             label: Text(
                 'MOVIES',
-                style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
+                style: TextStyle(color: Colors.black, fontSize: 30)
             ),
           ),
         ],

@@ -37,17 +37,10 @@ class _MoviesState extends State<Movies> {
                                 new Text(
                                   " Genres",
                                   style: new TextStyle(
-                                    fontSize: 30.0,
+                                    fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
-                            //     new Text(
-                            //       "View all",
-                            //       style: new TextStyle(
-                            //         fontSize: 20.0,
-                            //       ),
-                            //       textAlign: TextAlign.left,
-                            //     ),
                               ],
                             ),
                             new SizedBox(
@@ -56,180 +49,160 @@ class _MoviesState extends State<Movies> {
                             Row(
                               children: <Widget>[
                                 new Expanded(
-                                    child: new Container(
-                                      height: 130.0,
-                                      child: Column(
-                                        children: <Widget>[
-                                          Expanded(
-                                            child: Padding(
-                                              padding:
-                                              const EdgeInsets.only(bottom: 2.5, right: 2.5),
-                                              child: new Container(
-                                                decoration: new BoxDecoration(
-                                                    color: Color(0xFFFD7384),
-                                                    borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.local_fire_department_outlined,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Action',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            child: Padding(
-                                              padding:
-                                              const EdgeInsets.only(top: 2.5, right: 2.5),
-                                              child: new Container(
-                                                decoration: new BoxDecoration(
-                                                    color: Color(0XFFFC7B4D),
-                                                    borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.bug_report_outlined,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Horror',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    )),
-                                new Expanded(
-                                    child: new Container(
-                                      height: 130.0,
-                                      child: Column(
-                                        children: <Widget>[
-                                          Expanded(
-                                            child: Padding(
-                                              padding:
-                                              const EdgeInsets.only(bottom: 2.5, right: 2.5),
-                                              child: new Container(
+                                  child: new Container(
+                                    height: 150.0,
+                                    child: Column(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Padding(
+                                            padding:
+                                            const EdgeInsets.only(bottom: 2.5, right: 2.5),
+                                            child: new Container(
+                                                width: 320,
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF2BD093),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.favorite,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Romance',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
-                                                ),
-                                              ),
+                                                child :RaisedButton.icon(
+                                                  textColor: Colors.black,
+                                                  color: Colors.red[200],
+                                                  onPressed: () {
+                                                    Navigator.pushNamed(context, '/movieresults');
+                                                  },
+                                                  icon: Icon(Icons.local_fire_department_outlined, color: Colors.black,),
+                                                  label: Text("Action",
+                                                      style: new TextStyle(color: Colors.black, fontSize: 24)),
+                                                )
                                             ),
                                           ),
-                                          Expanded(
-                                            child: Padding(
-                                              padding:
-                                              const EdgeInsets.only(top: 2.5, right: 2.5),
-                                              child: new Container(
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding:
+                                            const EdgeInsets.only(top: 2.5, right: 2.5),
+                                            child: new Container(
+                                                width: 320,
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0XFFCE93D8),
+                                                    color: Color(0XFFFC7B4D),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.face_retouching_natural,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Drama',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
-                                                ),
-                                              ),
+                                                child :RaisedButton.icon(
+                                                    textColor: Colors.black,
+                                                    color: Colors.orange[200],
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/movieresults');
+                                                    },
+                                                    icon: Icon(Icons.bug_report_outlined, color: Colors.black,),
+                                                    label: Text('Horror',
+                                                        style: new TextStyle(color: Colors.black, fontSize: 24))
+                                                )
                                             ),
                                           ),
-                                        ],
-                                      ),
-                                    )),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
                                 new Expanded(
-                                    child: new Container(
-                                      height: 130.0,
-                                      child: Column(
-                                        children: <Widget>[
-                                          Expanded(
-                                            child: Padding(
-                                              padding:
-                                              const EdgeInsets.only(left: 2.5, bottom: 2.5),
-                                              child: new Container(
+                                  child: new Container(
+                                    height: 150.0,
+                                    child: Column(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Padding(
+                                            padding:
+                                            const EdgeInsets.only(bottom: 2.5, right: 2.5, left: 2.5),
+                                            child: new Container(
+                                                width: 320,
+                                                decoration: new BoxDecoration(
+                                                    color: Color(0XFF2BD093),
+                                                    borderRadius: new BorderRadius.circular(5.0)),
+                                                child :RaisedButton.icon(
+                                                  textColor: Colors.black,
+                                                  color: Colors.lightGreen[200],
+                                                  onPressed: () {
+                                                    Navigator.pushNamed(context, '/movieresults');
+                                                  },
+                                                  icon: Icon(Icons.favorite, color: Colors.black,),
+                                                  label: Text("Romance",
+                                                      style: new TextStyle(color: Colors.black, fontSize: 24)),
+                                                )
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: Padding(
+                                            padding:
+                                            const EdgeInsets.only(top: 2.5, right: 2.5, left: 2.5),
+                                            child: new Container(
+                                                width: 320,
+                                                decoration: new BoxDecoration(
+                                                    color: Color(0XFFFC7B4D),
+                                                    borderRadius: new BorderRadius.circular(5.0)),
+                                                child :RaisedButton.icon(
+                                                    textColor: Colors.black,
+                                                    color: Colors.indigo[200],
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/movieresults');
+                                                    },
+                                                    icon: Icon(Icons.face_retouching_natural, color: Colors.black,),
+                                                    label: Text('Drama',
+                                                        style: new TextStyle(color: Colors.black, fontSize: 24))
+                                                )
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                                new Expanded(
+                                  child: new Container(
+                                    height: 150.0,
+                                    child: Column(
+                                      children: <Widget>[
+                                        Expanded(
+                                          child: Padding(
+                                            padding:
+                                            const EdgeInsets.only(left: 2.5, bottom: 2.5),
+                                            child: new Container(
+                                                width: 320,
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.bubble_chart_outlined,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Comedy',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
-                                                ),
-                                              ),
+                                                child :RaisedButton.icon(
+                                                    textColor: Colors.black,
+                                                    color: Colors.amber[200],
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/movieresults');
+                                                    },
+                                                    icon: Icon(Icons.bubble_chart_outlined, color: Colors.black,),
+                                                    label: Text('Comedy', style: new TextStyle(color: Colors.black, fontSize: 24))
+                                                )
                                             ),
                                           ),
-                                          Expanded(
-                                            child: Padding(
-                                              padding: const EdgeInsets.only(left: 2.5, top: 2.5),
-                                              child: new Container(
+                                        ),
+
+                                        Expanded(
+                                          child: Padding(
+                                            padding:
+                                            const EdgeInsets.only(left: 2.5, top: 2.5),
+                                            child: new Container(
+                                                width: 320,
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0XFFF1B069),
+                                                    color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.airplanemode_active_rounded,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Science Fiction',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    )),
-                              ],
-                            ),
+                                                child :RaisedButton.icon(
+                                                    textColor: Colors.black,
+                                                    color: Colors.blue[200],
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/movieresults');
+                                                    },
+                                                    icon: Icon(Icons.airplanemode_active_rounded, color: Colors.black,),
+                                                    label: Text('Science Fiction', style: new TextStyle(color: Colors.black, fontSize: 24))
+                                                )
+                                            ),),
+                                        ),],
+                                    ),
+                                  ),),],),
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
                               child: new Container(
@@ -242,7 +215,7 @@ class _MoviesState extends State<Movies> {
                                         new Text(
                                           "Top movies",
                                           style: new TextStyle(
-                                            fontSize: 30.0,
+                                            fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
                                           ),
                                           textAlign: TextAlign.left,
                                         ),

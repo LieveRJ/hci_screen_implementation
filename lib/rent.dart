@@ -22,7 +22,7 @@ class _RentState extends State<Rent> {
       appBar: AppBar(
         title: Text('Instructions to rent an item'),
         centerTitle: true,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.red,
       ),
       body: ListView(
         children: <Widget>[
@@ -60,7 +60,10 @@ class _RentState extends State<Rent> {
                                         color: Colors.white,
                                       ),
                                       new Text(
-                                          "Instructions \n 1. Select an item to rent \n 2. Use the scanner button to the right \n 3. Scan the barcode on the item \n 4. Confirm your login and that you want to rent \n 5. Enjoy your item!",
+                                          "Instructions", style: new TextStyle(
+                                        fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
+                                      ),),
+                                    new Text("1. Select an item to rent \n 2. Use the scanner button to the right \n 3. Scan the barcode on the item \n 4. Confirm your login and that you want to rent \n 5. Enjoy your item!",
                                           style: new TextStyle(
                                               color: Colors.black,
                                               fontSize: 20))
@@ -77,11 +80,11 @@ class _RentState extends State<Rent> {
                                     height: 140.0,
                                     child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
-                                          primary: Colors.lightGreen[300],
+                                          primary: Colors.red[400],
                                         ),
                                         onPressed: () {
                                         },
-                                        child: Text("Click here to scan your barcode", style: new TextStyle(color: Colors.white, fontSize:40))
+                                        child: Text("Click here to scan your barcode", style: new TextStyle(color: Colors.black, fontSize:40))
                                     ),
                                   ),
                                 ),

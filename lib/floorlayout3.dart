@@ -23,7 +23,7 @@ class Layout3 extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(right: 5.0),
                               child: new Container(
-                                height: 40.0,
+                                height: 60.0,
                                 child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                       primary: Colors.cyan[200],
@@ -31,7 +31,7 @@ class Layout3 extends StatelessWidget {
                                     onPressed: () {
                                       Navigator.pushNamed(context, '/floorlayout1');
                                     },
-                                    child: Text("Ground floor", style: new TextStyle(color: Colors.white))
+                                    child: Text("Ground floor", style: new TextStyle(color: Colors.black, fontSize: 20))
                                 ),
                               ),
                             ),
@@ -40,7 +40,7 @@ class Layout3 extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(right: 5.0),
                               child: new Container(
-                                height: 40.0,
+                                height: 60.0,
                                 child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                       primary: Colors.cyan[200],
@@ -48,7 +48,7 @@ class Layout3 extends StatelessWidget {
                                     onPressed: () {
                                       Navigator.pushNamed(context, '/floorlayout2');
                                     },
-                                    child: Text("First floor", style: new TextStyle(color: Colors.white))
+                                    child: Text("First floor", style: new TextStyle(color: Colors.black, fontSize: 20))
                                 ),
                               ),
                             ),
@@ -57,14 +57,14 @@ class Layout3 extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(right: 5.0),
                               child: new Container(
-                                height: 40.0,
+                                height: 60.0,
                                 child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
                                       primary: Colors.cyan[600],
                                     ),
                                     onPressed: () {
                                     },
-                                    child: Text("Third floor", style: new TextStyle(color: Colors.white))
+                                    child: Text("Second floor", style: new TextStyle(color: Colors.black, fontSize: 20))
                                 ),
                               ),
                             ),

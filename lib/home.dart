@@ -26,27 +26,27 @@ class _HomeState extends State<Home> {
       ),
       body: GridView.count(
         primary: false,
-        padding: const EdgeInsets.all(50),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 80),
         crossAxisSpacing: 20,
         mainAxisSpacing: 20,
         crossAxisCount: 3,
         childAspectRatio: 2,
         children: <Widget>[
           ElevatedButton.icon(                                         //BOOKS
-              style: ElevatedButton.styleFrom(
-                primary: Colors.lightBlueAccent[100],
-              ),
-              onPressed: () {
-                Navigator.pushNamed(context, '/bookresult');
-              },
-              icon: Icon(
-                Icons.menu_book_rounded,
-                color: Colors.blueGrey[900],
-                size: 100,
-              ),
-              label: Text(
-                  'BOOKS', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
-              )
+            style: ElevatedButton.styleFrom(
+              primary: Colors.lightBlueAccent[100],
+            ),
+            onPressed: () {
+              Navigator.pushNamed(context, '/book');
+            },
+            icon: Icon(
+              Icons.menu_book_rounded,
+              color: Colors.black,
+              size: 100,
+            ),
+            label: Text(
+              'BOOKS', style: TextStyle(color: Colors.black, fontSize: 30)
+            )
           ),
           ElevatedButton.icon(                                          //MEDIA
             style: ElevatedButton.styleFrom(
@@ -57,75 +57,75 @@ class _HomeState extends State<Home> {
             },
             icon: Icon(
               Icons.perm_media_outlined,
-              color: Colors.blueGrey[900],
+              color: Colors.black,
               size: 100.0,
             ),
             label: Text(
-                'MEDIA', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
+                'MEDIA', style: TextStyle(color: Colors.black, fontSize: 30)
             ),
           ),
           ElevatedButton.icon(                                         //INFO
             style: ElevatedButton.styleFrom(
-              primary: Colors.deepOrange[300],
+              primary: Colors.orangeAccent[100],
             ),
             onPressed: () {
               Navigator.pushNamed(context, '/info');
             },
             icon: Icon(
               Icons.info_outline_rounded,
-              color: Colors.blueGrey[900],
+              color: Colors.black,
               size: 100.0,
             ),
             label: Text(
-                'INFO', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
+                'GENERAL\n   INFO', style: TextStyle(color: Colors.black, fontSize: 30)
             ),
           ),
           ElevatedButton.icon(                                         //RENT
             style: ElevatedButton.styleFrom(
-              primary: Colors.cyan[600],
+              primary: Colors.indigo[200],
             ),
             onPressed: () {
               Navigator.pushNamed(context, '/rent');
             },
             icon: Icon(
               Icons.keyboard_return_rounded,
-              color: Colors.blueGrey[900],
+              color: Colors.black,
               size: 100,
             ),
             label: Text(
-                'RENT', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
+                'RENT', style: TextStyle(color: Colors.black, fontSize: 30)
             ),
           ),
           ElevatedButton.icon(                                         //RETURN
             style: ElevatedButton.styleFrom(
-              primary: Colors.green[300],
+              primary: Colors.green[200],
             ),
             onPressed: () {
               Navigator.pushNamed(context, '/return');
             },
             icon: Icon(
               Icons.double_arrow_rounded,
-              color: Colors.blueGrey[900],
+              color: Colors.black,
               size: 100.0,
             ),
             label: Text(
-                'RETURN', style: TextStyle(color: Colors.blueGrey[900], fontSize: 30)
+                'RETURN', style: TextStyle(color: Colors.black, fontSize: 30)
             ),
           ),
           ElevatedButton.icon(                                         //LAYOUT
             style: ElevatedButton.styleFrom(
-              primary: Colors.indigo[300],
+              primary: Colors.teal[200],
             ),
             onPressed: () {
               Navigator.pushNamed(context, '/floorlayout1');
             },
             icon: Icon(
               Icons.map_outlined,
-              color: Colors.blueGrey[900],
-              size: 70.0,
+              color: Colors.black,
+              size: 100.0,
             ),
             label: Text(
-                'LIBRARY MAP', style: TextStyle(color: Colors.blueGrey[900], fontSize: 25)
+                'LIBRARY\n    MAP', style: TextStyle(color: Colors.black, fontSize: 30)
             ),
           )
         ],

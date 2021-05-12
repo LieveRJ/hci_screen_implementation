@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class BookResult extends StatefulWidget {
+class Book extends StatefulWidget {
   @override
-  _BookResultState createState() => _BookResultState();
+  _BookState createState() => _BookState();
 }
 
-class _BookResultState extends State<BookResult> {
+class _BookState extends State<Book> {
   @override
   void initState(){
     super.initState();
@@ -21,8 +21,9 @@ class _BookResultState extends State<BookResult> {
         appBar: AppBar(
           title: Text(appTitle),
           centerTitle: true,
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.red
         ),
+        resizeToAvoidBottomInset: false,
         body: ListView(
             children: <Widget>[
               Padding(
@@ -37,17 +38,10 @@ class _BookResultState extends State<BookResult> {
                                 new Text(
                                   " Genres",
                                   style: new TextStyle(
-                                    fontSize: 30.0,
+                                    fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
                                   ),
                                   textAlign: TextAlign.left,
                                 ),
-                            //     new Text(
-                            //       "View all",
-                            //       style: new TextStyle(
-                            //         fontSize: 20.0,
-                            //       ),
-                            //       textAlign: TextAlign.left,
-                            //     ),
                               ],
                             ),
                             new SizedBox(
@@ -59,26 +53,26 @@ class _BookResultState extends State<BookResult> {
                                     child: Padding(
                                       padding: const EdgeInsets.only(right: 5.0),
                                       child: new Container(
-                                        height: 100.0,
+                                        height: 150,
                                         decoration: new BoxDecoration(
                                             borderRadius: new BorderRadius.circular(5.0),
                                             color: Color(0xFFFD7384)),
-                                        child: new Column(
-                                          mainAxisAlignment: MainAxisAlignment.center,
-                                          children: <Widget>[
-                                            new Icon(
-                                              Icons.drive_eta,
-                                              color: Colors.white,
-                                            ),
-                                            new Text("Fiction",
-                                                style: new TextStyle(color: Colors.white, fontSize: 24))
-                                          ],
-                                        ),
-                                      ),
-                                    )),
+                                          child :RaisedButton.icon(
+                                            textColor: Colors.black,
+                                            color: Colors.red[200],
+                                            onPressed: () {
+                                              Navigator.pushNamed(context, '/bookresults');
+                                            },
+                                            icon: Icon(Icons.drive_eta, color: Colors.black,),
+                                            label: Text("Fiction",
+                                                style: new TextStyle(color: Colors.black, fontSize: 24)),
+                                            )
+                                          ),
+                                    ),
+                                ),
                                 new Expanded(
                                     child: new Container(
-                                      height: 100.0,
+                                      height: 150.0,
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
@@ -86,23 +80,20 @@ class _BookResultState extends State<BookResult> {
                                               padding:
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5),
                                               child: new Container(
+                                                width: 320,
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF2BD093),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.local_offer,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Novel',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
-                                                ),
+                                                child :RaisedButton.icon(
+                                                  textColor: Colors.black,
+                                                  color: Colors.lightGreen[200],
+                                                  onPressed: () {
+                                                    Navigator.pushNamed(context, '/bookresults');
+                                                  },
+                                                  icon: Icon(Icons.local_offer, color: Colors.black,),
+                                                  label: Text("Novel",
+                                                  style: new TextStyle(color: Colors.black, fontSize: 24)),
+                                                )
                                               ),
                                             ),
                                           ),
@@ -111,32 +102,30 @@ class _BookResultState extends State<BookResult> {
                                               padding:
                                               const EdgeInsets.only(top: 2.5, right: 2.5),
                                               child: new Container(
+                                                width: 320,
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFFFC7B4D),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.beenhere,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Mystery',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
+                                                child :RaisedButton.icon(
+                                                  textColor: Colors.black,
+                                                  color: Colors.orange[200],
+                                                  onPressed: () {
+                                                    Navigator.pushNamed(context, '/bookresults');
+                                                  },
+                                                  icon: Icon(Icons.beenhere, color: Colors.black,),
+                                                  label: Text('Mystery',
+                                                    style: new TextStyle(color: Colors.black, fontSize: 24))
+                                                  )
                                                 ),
                                               ),
                                             ),
-                                          ),
                                         ],
                                       ),
-                                    )),
+                                    ),
+                                ),
                                 new Expanded(
                                     child: new Container(
-                                      height: 100.0,
+                                      height: 150.0,
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
@@ -144,55 +133,45 @@ class _BookResultState extends State<BookResult> {
                                               padding:
                                               const EdgeInsets.only(left: 2.5, bottom: 2.5),
                                               child: new Container(
+                                                width: 320,
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.account_balance,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Thriller',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
+                                                child :RaisedButton.icon(
+                                                  textColor: Colors.black,
+                                                  color: Colors.amber[200],
+                                                  onPressed: () {
+                                                    Navigator.pushNamed(context, '/bookresults');
+                                                  },
+                                                  icon: Icon(Icons.account_balance, color: Colors.black,),
+                                                  label: Text('Thriller', style: new TextStyle(color: Colors.black, fontSize: 24))
+                                                  )
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                          ),
-                                          Expanded(
-                                            child: Padding(
-                                              padding: const EdgeInsets.only(left: 2.5, top: 2.5),
-                                              child: new Container(
+
+                                        Expanded(
+                                          child: Padding(
+                                            padding:
+                                            const EdgeInsets.only(left: 2.5, top: 2.5),
+                                            child: new Container(
+                                                width: 320,
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0XFFF1B069),
+                                                    color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child: new Row(
-                                                  mainAxisAlignment: MainAxisAlignment.center,
-                                                  children: <Widget>[
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(right: 8.0),
-                                                      child: new Icon(
-                                                        Icons.art_track,
-                                                        color: Colors.white,
-                                                      ),
-                                                    ),
-                                                    new Text('Narrative',
-                                                        style: new TextStyle(color: Colors.white, fontSize: 24))
-                                                  ],
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    )),
-                              ],
-                            ),
+                                                child :RaisedButton.icon(
+                                                    textColor: Colors.black,
+                                                    color: Colors.blue[200],
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/bookresults');
+                                                    },
+                                                    icon: Icon(Icons.art_track, color: Colors.black,),
+                                                    label: Text('Narrative', style: new TextStyle(color: Colors.black, fontSize: 24))
+                                                )
+                                            ),),
+                                        ),],
+                                    ),
+                                    ),),],),
                             Padding(
                               padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
                               child: new Container(
@@ -205,17 +184,10 @@ class _BookResultState extends State<BookResult> {
                                           new Text(
                                             "Top books",
                                             style: new TextStyle(
-                                              fontSize: 30.0,
+                                              fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
                                             ),
                                             textAlign: TextAlign.left,
                                           ),
-                                          // new Text(
-                                          //   "View all",
-                                          //   style: new TextStyle(
-                                          //     fontSize: 20.0,
-                                          //   ),
-                                          //   textAlign: TextAlign.left,
-                                          // ),
                                         ],
                                       ),
                                       new SizedBox(
@@ -415,6 +387,7 @@ class _BookResultState extends State<BookResult> {
                                             ),
                                           ],
                                           ),
+
                                       ],
                                   ),
                               ),
@@ -422,9 +395,9 @@ class _BookResultState extends State<BookResult> {
                       ]
                       ),
               ),
-        )
-        ]
-    )
+    ),
+    ],
+                      ),
     );
   }
 }
