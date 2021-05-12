@@ -32,18 +32,18 @@ class _WelcomeState extends State<Welcome>{
                   duration: Duration(seconds: 10),
                   opacity: _visible ? 1.0 : 0.0,
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       Container(
                             child: Image.asset('assets/oba_logo.jpeg',
-                              width: 300,
-                              height: 300,
+                              width: 200,
+                              height: 200,
                             ),
                         ),
                         Container(
-                            child: Text(' Welcome to the OBA!'
-                                '\nTap the screen to start',
+                          alignment: Alignment.center,
+                            child: Text(' Welcome to the OBA!\nTap the screen to start',
                                 style: TextStyle(
                                 fontSize: 50,
                                 fontWeight: FontWeight.bold,
