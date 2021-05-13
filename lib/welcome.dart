@@ -19,6 +19,8 @@ class _WelcomeState extends State<Welcome>{
     ]);
   }
   Widget build(BuildContext context) {
+    final _screenSize = MediaQuery.of(context).size;
+
     return Scaffold(
           appBar: AppBar(
             title: Text('OBA User Interface'),
@@ -35,14 +37,15 @@ class _WelcomeState extends State<Welcome>{
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
-                      Container(
+                      Expanded(
                             child: Image.asset('assets/oba_logo.jpeg',
                               width: 200,
-                              height: 200,
+                              height: _screenSize.height * 0.2,
                             ),
                         ),
                         Container(
                           alignment: Alignment.center,
+                            height: _screenSize.height * 0.2,
                             child: Text(' Welcome to the OBA!\nTap the screen to start',
                                 style: TextStyle(
                                 fontSize: 50,
@@ -54,8 +57,8 @@ class _WelcomeState extends State<Welcome>{
                             ),
                     ],
                   ),
+                  ),
               ),
-          ),
     );
   }
 }

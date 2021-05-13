@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class Information extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final appTitle = "Library Search";
 
     return Scaffold(
       appBar: AppBar(
@@ -56,7 +55,7 @@ class Information extends StatelessWidget {
                                           children: <Widget>[
                                             new Icon(
                                               Icons.drive_eta,
-                                              color: Colors.black,
+                                              color: Colors.white,
                                             ),
                                             new Text("MONDAY: 10:00 - 22:00 \n \n"
                                                 "TUESDAY: 10:00 - 22:00 \n \n"
@@ -81,7 +80,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5,),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Colors.red,
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -106,7 +105,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Colors.red,
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -131,7 +130,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Colors.red,
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -156,7 +155,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Colors.red,
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -181,7 +180,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(top: 2.5, right: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Colors.red,
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
