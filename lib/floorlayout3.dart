@@ -12,6 +12,9 @@ class Layout3 extends StatelessWidget {
         ),
         body: ListView(
           children: <Widget>[
+            new SizedBox(
+              height: 15.0,
+            ),
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 10),
                 child: new Container(

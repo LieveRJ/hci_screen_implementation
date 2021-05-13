@@ -38,7 +38,7 @@ class Information extends StatelessWidget {
                               ],
                             ),
                             new SizedBox(
-                              height: 10.0,
+                              height: 30.0,
                             ),
                             Row(
                               children: <Widget>[
@@ -46,17 +46,13 @@ class Information extends StatelessWidget {
                                     child: Padding(
                                       padding: const EdgeInsets.only(right: 5.0),
                                       child: new Container(
-                                        height: 400.0,
+                                        height: 350.0,
                                         decoration: new BoxDecoration(
                                           borderRadius: new BorderRadius.circular(5.0),
                                           color: Colors.black.withOpacity(0.0),),
                                         child: new Column(
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: <Widget>[
-                                            new Icon(
-                                              Icons.drive_eta,
-                                              color: Colors.white,
-                                            ),
                                             new Text("MONDAY: 10:00 - 22:00 \n \n"
                                                 "TUESDAY: 10:00 - 22:00 \n \n"
                                                 "WEDNESDAY: 10:00 - 22:00 \n \n"
@@ -71,7 +67,7 @@ class Information extends StatelessWidget {
                                     )),
                                 new Expanded(
                                     child: new Container(
-                                      height: 300.0,
+                                      height: 350.0,
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
