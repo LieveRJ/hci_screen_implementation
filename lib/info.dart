@@ -39,7 +39,7 @@ class Information extends StatelessWidget {
                               ],
                             ),
                             new SizedBox(
-                              height: 10.0,
+                              height: 30.0,
                             ),
                             Row(
                               children: <Widget>[
@@ -47,17 +47,13 @@ class Information extends StatelessWidget {
                                     child: Padding(
                                       padding: const EdgeInsets.only(right: 5.0),
                                       child: new Container(
-                                        height: 400.0,
+                                        height: 350.0,
                                         decoration: new BoxDecoration(
                                           borderRadius: new BorderRadius.circular(5.0),
                                           color: Colors.black.withOpacity(0.0),),
                                         child: new Column(
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: <Widget>[
-                                            new Icon(
-                                              Icons.drive_eta,
-                                              color: Colors.black,
-                                            ),
                                             new Text("MONDAY: 10:00 - 22:00 \n \n"
                                                 "TUESDAY: 10:00 - 22:00 \n \n"
                                                 "WEDNESDAY: 10:00 - 22:00 \n \n"
@@ -72,7 +68,7 @@ class Information extends StatelessWidget {
                                     )),
                                 new Expanded(
                                     child: new Container(
-                                      height: 300.0,
+                                      height: 350.0,
                                       child: Column(
                                         children: <Widget>[
                                           Expanded(
@@ -81,7 +77,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5,),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Color(0xFFF44336),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -106,7 +102,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Color(0xFFF44336),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -131,7 +127,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Color(0xFFF44336),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -156,7 +152,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(bottom: 2.5, right: 2.5, top: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Color(0xFFF44336),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -181,7 +177,7 @@ class Information extends StatelessWidget {
                                               const EdgeInsets.only(top: 2.5, right: 2.5),
                                               child: new Container(
                                                 decoration: new BoxDecoration(
-                                                    color: Color(0xFFEF5350),
+                                                    color: Color(0xFFF44336),
                                                     borderRadius: new BorderRadius.circular(5.0)),
                                                 child: new Row(
                                                   mainAxisAlignment: MainAxisAlignment.center,
