@@ -16,7 +16,6 @@ class _MediaOptionState extends State<Media> {
     ]);
   }
   Widget build(BuildContext context) {
-    final appTitle = "Library Search";
 
     return Scaffold(
       appBar: AppBar(

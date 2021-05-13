@@ -38,7 +38,7 @@ void main() => runApp(MaterialApp(
     '/info': (context) => Information(),
     '/music': (context) => Music(),
     '/movies': (context) => Movies(),
-    '/camera_screen': (context) => MyApp(),
+    '/camera_screen': (context) => Camera(),
     '/musicresults': (context) => MusicResult(),
     '/movieresults': (context) => MovieResult(),
   },

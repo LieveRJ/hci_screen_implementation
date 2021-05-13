@@ -16,81 +16,45 @@ class _RentState extends State<Rent> {
     ]);
   }
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Instructions to rent an item'),
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: ListView(
-        children: <Widget>[
-          Padding(
-              padding: const EdgeInsets.symmetric(
-                  horizontal: 15.0, vertical: 10),
-              child: new Container(
-                child: new Column(
-                    children: <Widget>[
-                      Row(
-                        mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                        ],
-                      ),
-                      new SizedBox(
-                        height: 10.0,
-                      ),
-                      Row(
-                        children: <Widget>[
-                          new Expanded(
-                              child: Padding(
-                                padding: const EdgeInsets.only(right: 5.0),
-                                child: new Container(
-                                  height: 200.0,
-                                  decoration: new BoxDecoration(
-                                    borderRadius: new BorderRadius.circular(
-                                        5.0),
-                                    color: Colors.black.withOpacity(0.0),),
-                                  child: new Column(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: <Widget>[
-                                      new Icon(
-                                        Icons.drive_eta,
-                                        color: Colors.white,
-                                      ),
-                                      new Text(
-                                          "Instructions", style: new TextStyle(
-                                        fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
-                                      ),),
-                                    new Text("1. Select an item to rent \n 2. Use the scanner button to the right \n 3. Scan the barcode on the item \n 4. Confirm your login and that you want to rent \n 5. Enjoy your item!",
-                                          style: new TextStyle(
-                                              color: Colors.black,
-                                              fontSize: 20))
-                                    ],
-                                  ),
-                                ),
-                              ))]),
-                          Row(
-                            children: <Widget>[
-                              new Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(horizontal: 60.0, vertical: 20),
-                                  child: new Container(
-                                    height: 140.0,
-                                    child: ElevatedButton(
-                                        style: ElevatedButton.styleFrom(
-                                          primary: Colors.red[400],
-                                        ),
-                                        child: Text("Click here to scan your barcode", style: new TextStyle(color: Colors.black, fontSize:40))
-                                    ),
-                                  ),
-                                ),
-                              )]),
-                        ],
-                ),
+      body: GridView.count(
+          primary: false,
+          padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 50),
+          crossAxisSpacing: 30,
+          mainAxisSpacing: 30,
+          crossAxisCount: 2,
+          childAspectRatio: 1,
+          children: <Widget>[
+           Column(
+             children: <Widget>[
+             Text("Instructions",
+               style: new TextStyle(fontSize: 35.0, color: Colors.red, fontWeight: FontWeight.bold,),
+               textAlign: TextAlign.center,
+             ),
+              Expanded(
+                child: Text(" 1. Select an item to rent \n 2. Click the button below to open the camera \n 3. Scan the barcode with the camera \n 4. Confirm your login and your scanned item(s) \n 5. Enjoy your item!",
+                  style: new TextStyle(
+                  color: Colors.black,
+                  fontSize: 30)),
               ),
-              ),
-         ],
+              ],
+           ),
+            ElevatedButton(
+                  onPressed: () {
+                      Navigator.pushNamed(context, '/camera_screen');
+                      },
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.red[400]),
+                  child: Text("Tap here to scan your barcode",
+                      style: new TextStyle(color: Colors.black, fontSize:40),
+                      textAlign: TextAlign.center,
+                  )),
+          ],
       ),
     );
   }

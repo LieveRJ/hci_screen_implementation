@@ -6,59 +6,59 @@ class Welcome extends StatefulWidget {
   _WelcomeState createState() => _WelcomeState();
 }
 
-class _WelcomeState extends State<Welcome>{
+class _WelcomeState extends State<Welcome> {
   double opacityLevel = 1.0;
   bool _visible = true;
 
   @override
-  void initState(){
+  void initState() {
     super.initState();
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.landscapeRight,
       DeviceOrientation.landscapeLeft,
     ]);
   }
+
   Widget build(BuildContext context) {
-    final _screenSize = MediaQuery.of(context).size;
 
     return Scaffold(
-          appBar: AppBar(
-            title: Text('OBA User Interface'),
-            centerTitle: true,
-            backgroundColor: Colors.red,
-          ),
-          body: GestureDetector(
-              behavior: HitTestBehavior.opaque,
-              onTap: () => Navigator.pushNamed(context, '/home'),
-              child: AnimatedOpacity(
-                  duration: Duration(seconds: 10),
-                  opacity: _visible ? 1.0 : 0.0,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: <Widget>[
-                      Expanded(
-                            child: Image.asset('assets/oba_logo.jpeg',
-                              width: 200,
-                              height: _screenSize.height * 0.2,
-                            ),
-                        ),
-                        Container(
-                          alignment: Alignment.center,
-                            height: _screenSize.height * 0.2,
-                            child: Text(' Welcome to the OBA!\nTap the screen to start',
-                                style: TextStyle(
-                                fontSize: 50,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 2.0,
-                                color: Colors.red,
-                              ),
-                            ),
-                            ),
-                    ],
-                  ),
-                  ),
+      appBar: AppBar(
+        title: Text('OBA User Interface'),
+        centerTitle: true,
+        backgroundColor: Colors.red,
+      ),
+      body: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () => Navigator.pushNamed(context, '/home'),
+        child: AnimatedOpacity(
+          duration: Duration(seconds: 10),
+          opacity: _visible ? 1.0 : 0.0,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Expanded(
+                child: Image.asset('assets/oba_logo.jpeg',
+                  width: 200,
+                  height: 200,
+                ),
               ),
+              Container(
+                alignment: Alignment.center,
+                height: 200,
+                child: Text(' Welcome to the OBA!\nTap the screen to start',
+                  style: TextStyle(
+                    fontSize: 50,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.0,
+                    color: Colors.red,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
