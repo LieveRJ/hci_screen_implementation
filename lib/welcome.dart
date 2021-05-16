@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
-
 class Welcome extends StatefulWidget {
   @override
   _WelcomeState createState() => _WelcomeState();
 }
 
 class _WelcomeState extends State<Welcome> {
+  // bool _visible = true;
   double opacityLevel = 1.0;
-  bool _visible = true;
+
+  void _changeOpacity() {
+    setState(() => opacityLevel = opacityLevel == 0 ? 1.0 : 0.0);
+  }
 
   @override
   void initState() {
@@ -16,7 +19,7 @@ class _WelcomeState extends State<Welcome> {
   }
 
   Widget build(BuildContext context) {
-
+    _changeOpacity();
     return Scaffold(
       appBar: AppBar(
         title: Text('OBA User Interface'),
@@ -27,8 +30,8 @@ class _WelcomeState extends State<Welcome> {
         behavior: HitTestBehavior.opaque,
         onTap: () => Navigator.pushNamed(context, '/home'),
         child: AnimatedOpacity(
-          duration: Duration(seconds: 10),
-          opacity: _visible ? 1.0 : 0.0,
+          opacity: opacityLevel,
+          duration: Duration(seconds: 5),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.stretch,
