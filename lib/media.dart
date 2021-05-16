@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class Media extends StatefulWidget {
   @override
@@ -10,10 +9,6 @@ class _MediaOptionState extends State<Media> {
   @override
   void initState(){
     super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-    ]);
   }
   Widget build(BuildContext context) {
 

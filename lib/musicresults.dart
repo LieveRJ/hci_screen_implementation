@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/basic.dart';
 
 class MusicResult extends StatefulWidget {
@@ -11,16 +10,12 @@ class _MusicResultState extends State<MusicResult> {
   @override
   void initState(){
     super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-    ]);
+
   }
   Widget build(BuildContext context) {
-    final appTitle = "Music";
     return Scaffold(
       appBar: AppBar(
-          title: Text(appTitle),
+          title: Text('Music'),
           centerTitle: true,
           backgroundColor: Colors.red
       ),

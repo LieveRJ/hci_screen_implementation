@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class Music extends StatefulWidget {
   @override
@@ -10,10 +9,6 @@ class _MusicState extends State<Music> {
   @override
   void initState(){
     super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-    ]);
   }
   Widget build(BuildContext context) {
     final appTitle = "Music";

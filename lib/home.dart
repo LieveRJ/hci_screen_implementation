@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -10,10 +9,6 @@ class _HomeState extends State<Home> {
   @override
   void initState(){
     super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-    ]);
   }
   Widget build(BuildContext context) {
     final appTitle = "Please select a category";

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 
 class Welcome extends StatefulWidget {
   @override
@@ -13,10 +13,6 @@ class _WelcomeState extends State<Welcome> {
   @override
   void initState() {
     super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-    ]);
   }
 
   Widget build(BuildContext context) {

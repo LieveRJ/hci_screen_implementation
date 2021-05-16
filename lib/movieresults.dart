@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter/src/widgets/basic.dart';
 
 class MovieResult extends StatefulWidget {
@@ -11,16 +10,11 @@ class _MovieResultState extends State<MovieResult> {
   @override
   void initState(){
     super.initState();
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-    ]);
   }
   Widget build(BuildContext context) {
-    final appTitle = "Movies";
     return Scaffold(
       appBar: AppBar(
-          title: Text(appTitle),
+          title: Text('Movies'),
           centerTitle: true,
           backgroundColor: Colors.red
       ),

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class Return extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final appTitle = "Library Search";
 
     return Scaffold(
       appBar: AppBar(
