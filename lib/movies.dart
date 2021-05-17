@@ -21,6 +21,25 @@ class _MoviesState extends State<Movies> {
         body: ListView(
             children: <Widget>[
               Padding(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/movieresults');
+                    },
+                    icon: Icon(Icons.search,
+                      color: Colors.black,
+                      size: 30.0,),
+                    label: Text("Search here",
+                      style: new TextStyle(color: Colors.black, fontSize:30),
+                      textAlign: TextAlign.center,),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: BorderSide(color: Colors.grey))),
+                    )),),
+              Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
                   child: new Container(
                       child: new Column(
@@ -57,16 +76,16 @@ class _MoviesState extends State<Movies> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF2BD093),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                  textColor: Colors.black,
-                                                  color: Colors.red[200],
-                                                  onPressed: () {
-                                                    Navigator.pushNamed(context, '/movieresults');
-                                                  },
-                                                  icon: Icon(Icons.local_fire_department_outlined, color: Colors.black,),
-                                                  label: Text("Action",
-                                                      style: new TextStyle(color: Colors.black, fontSize: 24)),
-                                                )
+                                                child: ElevatedButton.icon(
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/movieresults');
+                                                    },
+                                                    icon: Icon(Icons.local_fire_department, color: Colors.black,),
+                                                    label: Text("Action",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.red[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -79,16 +98,16 @@ class _MoviesState extends State<Movies> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFFFC7B4D),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.orange[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/movieresults');
                                                     },
-                                                    icon: Icon(Icons.bug_report_outlined, color: Colors.black,),
-                                                    label: Text('Horror',
-                                                        style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    icon: Icon(Icons.bug_report, color: Colors.black,),
+                                                    label: Text("Horror",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.orange[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -110,16 +129,16 @@ class _MoviesState extends State<Movies> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF2BD093),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                  textColor: Colors.black,
-                                                  color: Colors.lightGreen[200],
-                                                  onPressed: () {
-                                                    Navigator.pushNamed(context, '/movieresults');
-                                                  },
-                                                  icon: Icon(Icons.favorite, color: Colors.black,),
-                                                  label: Text("Romance",
-                                                      style: new TextStyle(color: Colors.black, fontSize: 24)),
-                                                )
+                                                child: ElevatedButton.icon(
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/movieresults');
+                                                    },
+                                                    icon: Icon(Icons.favorite, color: Colors.black,),
+                                                    label: Text("Romance",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -132,16 +151,16 @@ class _MoviesState extends State<Movies> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFFFC7B4D),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.indigo[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/movieresults');
                                                     },
                                                     icon: Icon(Icons.face_retouching_natural, color: Colors.black,),
-                                                    label: Text('Drama',
-                                                        style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    label: Text("Drama",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.indigo[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -163,15 +182,16 @@ class _MoviesState extends State<Movies> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.amber[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/movieresults');
                                                     },
-                                                    icon: Icon(Icons.bubble_chart_outlined, color: Colors.black,),
-                                                    label: Text('Comedy', style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    icon: Icon(Icons.tag_faces, color: Colors.black,),
+                                                    label: Text("Comedy",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.amber[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -185,15 +205,16 @@ class _MoviesState extends State<Movies> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.blue[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/movieresults');
                                                     },
-                                                    icon: Icon(Icons.airplanemode_active_rounded, color: Colors.black,),
-                                                    label: Text('Science Fiction', style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    icon: Icon(Icons.airplanemode_active, color: Colors.black,),
+                                                    label: Text("Science Fiction",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.blue[200]),
+                                                    )),
                                             ),),
                                         ),],
                                     ),

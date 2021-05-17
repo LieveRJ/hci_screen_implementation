@@ -21,6 +21,25 @@ class _MusicState extends State<Music> {
         body: ListView(
             children: <Widget>[
               Padding(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/musicresults');
+                    },
+                    icon: Icon(Icons.search,
+                      color: Colors.black,
+                      size: 30.0,),
+                    label: Text("Search here",
+                      style: new TextStyle(color: Colors.black, fontSize:30),
+                      textAlign: TextAlign.center,),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                          RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18.0),
+                              side: BorderSide(color: Colors.grey))),
+                    )),),
+              Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
                   child: new Container(
                       child: new Column(
@@ -57,16 +76,16 @@ class _MusicState extends State<Music> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF2BD093),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                  textColor: Colors.black,
-                                                  color: Colors.red[200],
-                                                  onPressed: () {
-                                                    Navigator.pushNamed(context, '/musicresults');
-                                                  },
-                                                  icon: Icon(Icons.star_outline_rounded, color: Colors.black,),
-                                                  label: Text("Pop Music",
-                                                      style: new TextStyle(color: Colors.black, fontSize: 24)),
-                                                )
+                                                child: ElevatedButton.icon(
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/musicresults');
+                                                    },
+                                                    icon: Icon(Icons.star_outline, color: Colors.black,),
+                                                    label: Text("Pop",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.red[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -79,16 +98,16 @@ class _MusicState extends State<Music> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFFFC7B4D),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.orange[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/musicresults');
                                                     },
-                                                    icon: Icon(Icons.whatshot_rounded, color: Colors.black,),
-                                                    label: Text('Rock',
-                                                        style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    icon: Icon(Icons.whatshot, color: Colors.black,),
+                                                    label: Text("Rock",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.orange[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -110,16 +129,16 @@ class _MusicState extends State<Music> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF2BD093),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                  textColor: Colors.black,
-                                                  color: Colors.lightGreen[200],
-                                                  onPressed: () {
-                                                    Navigator.pushNamed(context, '/musicresults');
-                                                  },
-                                                  icon: Icon(Icons.waves_rounded, color: Colors.black,),
-                                                  label: Text("Reggae",
-                                                      style: new TextStyle(color: Colors.black, fontSize: 24)),
-                                                )
+                                                child: ElevatedButton.icon(
+                                                    onPressed: () {
+                                                      Navigator.pushNamed(context, '/musicresults');
+                                                    },
+                                                    icon: Icon(Icons.waves_rounded, color: Colors.black,),
+                                                    label: Text("Reggae",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -132,16 +151,16 @@ class _MusicState extends State<Music> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFFFC7B4D),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.indigo[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/musicresults');
                                                     },
                                                     icon: Icon(Icons.wb_cloudy_outlined, color: Colors.black,),
-                                                    label: Text('Country',
-                                                        style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    label: Text("Country",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.indigo[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -163,15 +182,16 @@ class _MusicState extends State<Music> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.amber[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/musicresults');
                                                     },
                                                     icon: Icon(Icons.stacked_bar_chart, color: Colors.black,),
-                                                    label: Text('Jazz', style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    label: Text("Jazz",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.amber[200]),
+                                                    )),
                                             ),
                                           ),
                                         ),
@@ -185,15 +205,16 @@ class _MusicState extends State<Music> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.blue[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/musicresults');
                                                     },
                                                     icon: Icon(Icons.queue_music_rounded, color: Colors.black,),
-                                                    label: Text('Classical', style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    label: Text("Classical",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.blue[200]),
+                                                    )),
                                             ),),
                                         ),],
                                     ),
