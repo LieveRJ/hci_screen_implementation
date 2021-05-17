@@ -11,16 +11,34 @@ class _BookState extends State<Book> {
     super.initState();
   }
   Widget build(BuildContext context) {
-    final appTitle = "Books";
     return Scaffold(
         appBar: AppBar(
-          title: Text(appTitle),
+          title: Text("Books"),
           centerTitle: true,
           backgroundColor: Colors.red
         ),
         resizeToAvoidBottomInset: false,
         body: ListView(
             children: <Widget>[
+              Padding(
+                padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+                child: ElevatedButton.icon(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/bookresults');
+                    },
+                    icon: Icon(Icons.search,
+                      color: Colors.black,
+                      size: 30.0,),
+                    label: Text("Search here",
+                        style: new TextStyle(color: Colors.black, fontSize:30),
+                        textAlign: TextAlign.center,),
+                    style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.grey))),
+                  )),),
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
                   child: new Container(
@@ -52,19 +70,19 @@ class _BookState extends State<Book> {
                                         decoration: new BoxDecoration(
                                             borderRadius: new BorderRadius.circular(5.0),
                                             color: Color(0xFFFD7384)),
-                                          child :RaisedButton.icon(
-                                            textColor: Colors.black,
-                                            color: Colors.red[200],
+                                          child: ElevatedButton.icon(
                                             onPressed: () {
                                               Navigator.pushNamed(context, '/bookresults');
                                             },
                                             icon: Icon(Icons.drive_eta, color: Colors.black,),
                                             label: Text("Fiction",
-                                                style: new TextStyle(color: Colors.black, fontSize: 24)),
-                                            )
+                                                style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                              style: ButtonStyle(
+                                                backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
+                                                )),
+                                            ),
                                           ),
                                     ),
-                                ),
                                 new Expanded(
                                     child: new Container(
                                       height: 150.0,
@@ -79,19 +97,19 @@ class _BookState extends State<Book> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF2BD093),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                  textColor: Colors.black,
-                                                  color: Colors.lightGreen[200],
-                                                  onPressed: () {
-                                                    Navigator.pushNamed(context, '/bookresults');
-                                                  },
-                                                  icon: Icon(Icons.local_offer, color: Colors.black,),
-                                                  label: Text("Novel",
-                                                  style: new TextStyle(color: Colors.black, fontSize: 24)),
+                                                  child: ElevatedButton.icon(
+                                                      onPressed: () {
+                                                        Navigator.pushNamed(context, '/bookresults');
+                                                      },
+                                                      icon: Icon(Icons.local_offer, color: Colors.black,),
+                                                      label: Text("Novel",
+                                                          style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                      style: ButtonStyle(
+                                                        backgroundColor: MaterialStateProperty.all<Color>(Colors.lightGreen[200]),
+                                                      )),
                                                 )
                                               ),
                                             ),
-                                          ),
                                           Expanded(
                                             child: Padding(
                                               padding:
@@ -101,16 +119,16 @@ class _BookState extends State<Book> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFFFC7B4D),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                  textColor: Colors.black,
-                                                  color: Colors.orange[200],
-                                                  onPressed: () {
-                                                    Navigator.pushNamed(context, '/bookresults');
-                                                  },
-                                                  icon: Icon(Icons.beenhere, color: Colors.black,),
-                                                  label: Text('Mystery',
-                                                    style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                  )
+                                                  child: ElevatedButton.icon(
+                                                      onPressed: () {
+                                                        Navigator.pushNamed(context, '/bookresults');
+                                                      },
+                                                      icon: Icon(Icons.beenhere, color: Colors.black,),
+                                                      label: Text("Mystery",
+                                                          style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                      style: ButtonStyle(
+                                                        backgroundColor: MaterialStateProperty.all<Color>(Colors.orange[200]),
+                                                      )),
                                                 ),
                                               ),
                                             ),
@@ -132,15 +150,16 @@ class _BookState extends State<Book> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                  textColor: Colors.black,
-                                                  color: Colors.amber[200],
-                                                  onPressed: () {
-                                                    Navigator.pushNamed(context, '/bookresults');
-                                                  },
-                                                  icon: Icon(Icons.account_balance, color: Colors.black,),
-                                                  label: Text('Thriller', style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                  )
+                                                  child: ElevatedButton.icon(
+                                                      onPressed: () {
+                                                        Navigator.pushNamed(context, '/bookresults');
+                                                      },
+                                                      icon: Icon(Icons.account_balance, color: Colors.black,),
+                                                      label: Text("Thriller",
+                                                          style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                      style: ButtonStyle(
+                                                        backgroundColor: MaterialStateProperty.all<Color>(Colors.amber[200]),
+                                                      )),
                                                   ),
                                                 ),
                                               ),
@@ -154,15 +173,16 @@ class _BookState extends State<Book> {
                                                 decoration: new BoxDecoration(
                                                     color: Color(0XFF53CEDB),
                                                     borderRadius: new BorderRadius.circular(5.0)),
-                                                child :RaisedButton.icon(
-                                                    textColor: Colors.black,
-                                                    color: Colors.blue[200],
+                                                child: ElevatedButton.icon(
                                                     onPressed: () {
                                                       Navigator.pushNamed(context, '/bookresults');
                                                     },
                                                     icon: Icon(Icons.art_track, color: Colors.black,),
-                                                    label: Text('Narrative', style: new TextStyle(color: Colors.black, fontSize: 24))
-                                                )
+                                                    label: Text("Narrative",
+                                                        style: new TextStyle(color: Colors.black, fontSize: 30)),
+                                                    style: ButtonStyle(
+                                                      backgroundColor: MaterialStateProperty.all<Color>(Colors.blue[200]),
+                                                    )),
                                             ),),
                                         ),],
                                     ),
@@ -387,7 +407,7 @@ class _BookState extends State<Book> {
                                   ),
                               ),
                             ),
-                      ]
+                      ],
                       ),
               ),
     ),

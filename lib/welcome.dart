@@ -6,7 +6,6 @@ class Welcome extends StatefulWidget {
 }
 
 class _WelcomeState extends State<Welcome> {
-  // bool _visible = true;
   double opacityLevel = 1.0;
 
   void _changeOpacity() {
