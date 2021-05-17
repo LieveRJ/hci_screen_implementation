@@ -16,6 +16,18 @@ class _RentState extends State<Rent> {
         title: Text('Instructions to rent an item'),
         centerTitle: true,
         backgroundColor: Colors.red,
+        actions: <Widget>[
+          Padding(
+            padding: EdgeInsets.only(right: 20.0),
+            child: GestureDetector(
+              onTap: () {print("Help requested\nSomeone is currently on their way to help you.");},
+              child: Icon(
+                Icons.help,
+                size: 26.0,
+              ),
+            ),
+          ),
+        ],
       ),
       body: GridView.count(
           primary: false,

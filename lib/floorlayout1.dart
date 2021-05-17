@@ -8,6 +8,18 @@ class Layout1 extends StatelessWidget {
           title: Text('Click the buttons to see floor layout'),
           centerTitle: true,
           backgroundColor: Colors.red,
+          actions: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(right: 20.0),
+              child: GestureDetector(
+                onTap: () {print("Help requested\nSomeone is currently on their way to help you.");},
+                child: Icon(
+                  Icons.help,
+                  size: 26.0,
+                ),
+              ),
+            ),
+          ],
         ),
         body: ListView(
           children: <Widget>[
