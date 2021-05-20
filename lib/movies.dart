@@ -31,6 +31,7 @@ class _MoviesState extends State<Movies> {
           ],
         ),
         body: ListView(
+            physics: const NeverScrollableScrollPhysics(),
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),

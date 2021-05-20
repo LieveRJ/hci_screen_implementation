@@ -26,11 +26,12 @@ class _BookState extends State<Book> {
                   size: 26.0,
                 ),
               ),
-        ),
-        ],
+            ),
+          ],
         ),
         resizeToAvoidBottomInset: false,
         body: ListView(
+            physics: const NeverScrollableScrollPhysics(),
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
@@ -81,7 +82,7 @@ class _BookState extends State<Book> {
                                         height: 150,
                                         decoration: new BoxDecoration(
                                             borderRadius: new BorderRadius.circular(5.0),
-                                            color: Color(0xFFFD7384)),
+                                            color: Colors.red[200]),
                                           child: ElevatedButton.icon(
                                             onPressed: () {
                                               Navigator.pushNamed(context, '/bookresults');
@@ -90,7 +91,7 @@ class _BookState extends State<Book> {
                                             label: Text("Fiction",
                                                 style: new TextStyle(color: Colors.black, fontSize: 30)),
                                               style: ButtonStyle(
-                                                backgroundColor: MaterialStateProperty.all<Color>(Colors.red),
+                                                backgroundColor: MaterialStateProperty.all<Color>(Colors.red[200]),
                                                 )),
                                             ),
                                           ),

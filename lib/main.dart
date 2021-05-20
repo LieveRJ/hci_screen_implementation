@@ -19,6 +19,9 @@ import 'package:hci_screen_implementation/music.dart';
 import 'package:hci_screen_implementation/movies.dart';
 import 'package:hci_screen_implementation/musicresults.dart';
 import 'package:hci_screen_implementation/movieresults.dart';
+import 'package:hci_screen_implementation/bookresults2.dart';
+import 'package:hci_screen_implementation/musicresults2.dart';
+import 'package:hci_screen_implementation/movieresults2.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();   SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]).then((_){
@@ -43,6 +46,9 @@ void main() {
           '/camera_screen': (context) => Camera(),
           '/musicresults': (context) => MusicResult(),
           '/movieresults': (context) => MovieResult(),
+          '/bookresults2': (context) => BookResult2(),
+          '/movieresults2': (context) => MovieResult2(),
+          '/musicresults2': (context) => MusicResult2(),
         },
     ));
   });

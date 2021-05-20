@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/basic.dart';
 
-class MusicResult extends StatefulWidget {
+class MusicResult2 extends StatefulWidget {
   @override
   _MusicResultState createState() => _MusicResultState();
 }
 
-class _MusicResultState extends State<MusicResult> {
+class _MusicResultState extends State<MusicResult2> {
   @override
   void initState(){
     super.initState();
@@ -15,7 +15,7 @@ class _MusicResultState extends State<MusicResult> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Music - Page 1/2'),
+          title: Text('Music - Page 2/2'),
           centerTitle: true,
           backgroundColor: Colors.red,
         actions: <Widget>[
@@ -262,220 +262,24 @@ class _MusicResultState extends State<MusicResult> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
-              child: new Container(
-                child: new Column(
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(width: 150, height: 150),
-                                      child: new Container(
-                                        child: Image (
-                                          image: AssetImage("assets/folklore.png"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      "Folklore\nTaylor Swift",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(width: 150, height: 150),
-                                      child: new Container(
-                                        child: Image (
-                                          image: AssetImage("assets/fetch.png"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      "Fetch the Bolt Cutters\nFiona Apple",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(width: 150, height: 150),
-                                      child: new Container(
-                                        child: Image (
-                                          image: AssetImage("assets/YHLQMDLG.jpeg"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      'YHLQMDLG\nBad Bunny',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(width: 150, height: 150),
-                                      child: new Container(
-                                        child: Image (
-                                          image: AssetImage("assets/rough.png"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      "Rough and Rowdy Ways\nBob Dylan",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(width: 150, height: 150),
-                                      child: new Container(
-                                        child: Image (
-                                          image: AssetImage("assets/future.png"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      "Future Nostalgia\nDua Lipa",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
           ]
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, '/musicresults2');
-        },
-        child: const Icon(Icons.arrow_forward_outlined),
-        backgroundColor: Colors.red,
-      ),
+        floatingActionButton: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left:25.0),
+              child: FloatingActionButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/musicresults');
+                },
+                child: const Icon(Icons.arrow_back_rounded),
+                backgroundColor: Colors.red,
+              ),
+            ),
+          ],
+        )
     );
   }
 }
-
 

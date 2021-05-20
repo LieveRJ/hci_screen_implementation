@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/basic.dart';
 
-class MovieResult extends StatefulWidget {
+class MovieResult2 extends StatefulWidget {
   @override
-  _MovieResultState createState() => _MovieResultState();
+  _MovieResult2State createState() => _MovieResult2State();
 }
 
-class _MovieResultState extends State<MovieResult> {
+class _MovieResult2State extends State<MovieResult2> {
   @override
   void initState(){
     super.initState();
@@ -14,7 +14,7 @@ class _MovieResultState extends State<MovieResult> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Movies - Page 1/2'),
+          title: Text('Movies - Page 2/2'),
           centerTitle: true,
           backgroundColor: Colors.red,
         actions: <Widget>[
@@ -294,273 +294,24 @@ class _MovieResultState extends State<MovieResult> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(
-                  horizontal: 8.0, vertical: 10),
-              child: new Container(
-                child: new Column(
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(
-                                      bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(
-                                          width: 100, height: 165),
-                                      child: new Container(
-                                        child: Image(
-                                          image: AssetImage(
-                                              "assets/shawshank.jpeg"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      "Shawshank\nRedemption",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(children: <Widget>[
-                              Expanded(
-                                child: Padding(padding:
-                                const EdgeInsets.only(bottom: 2.5, right: 2.5,),
-                                  // child: new Container(
-                                  // constraints: BoxConstraints.tightFor(width: 100, height: 100),
-                                  child: new Container(
-                                    child: Image(
-                                      image: AssetImage("assets/godfather.jpeg"),
-                                      width: 100,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                      horizontal: 0, vertical: 0),
-                                  child: Text(
-                                    "The Godfather",
-                                    style: TextStyle(
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 15,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(
-                                      bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(
-                                          width: 100, height: 165),
-                                      child: new Container(
-                                        child: Image(
-                                          image: AssetImage(
-                                              "assets/part2.jpg"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      "The Godfather: Part II",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(
-                                      bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(
-                                          width: 100, height: 165),
-                                      child: new Container(
-                                        child: Image(
-                                          image: AssetImage(
-                                              "assets/knight.jpg"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      'The Dark Knight',
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(child: Padding(
-                                  padding: const EdgeInsets.only(
-                                    bottom: 2.5, right: 2.5,),
-                                  child: new Container(
-                                    constraints: BoxConstraints.tightFor(
-                                        width: 100, height: 165),
-                                    child: new Container(
-                                      child: Image(
-                                        image: AssetImage(
-                                            "assets/angry.jpeg"),
-                                        width: 100,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      "12 Angry Men",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        new Expanded(
-                          child: new Container(
-                            height: 350,
-                            width: 100,
-                            child: Column(
-                              children: <Widget>[
-                                Expanded(
-                                  child: Padding(
-                                    padding:
-                                    const EdgeInsets.only(
-                                      bottom: 2.5, right: 2.5,),
-                                    child: new Container(
-                                      constraints: BoxConstraints.tightFor(
-                                          width: 100, height: 165),
-                                      child: new Container(
-                                        child: Image(
-                                          image: AssetImage(
-                                              "assets/list.jpeg"),
-                                          width: 100,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        horizontal: 0, vertical: 0),
-                                    child: Text(
-                                      "Schindler's List",
-                                      style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
           ]
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, '/movieresults2');
-        },
-        child: const Icon(Icons.arrow_forward_outlined),
-        backgroundColor: Colors.red,
-      ),
+        floatingActionButton: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left:25.0),
+              child: FloatingActionButton(
+                onPressed: () {
+                  Navigator.pushNamed(context, '/movieresults');
+                },
+                child: const Icon(Icons.arrow_back_rounded),
+                backgroundColor: Colors.red,
+              ),
+            ),
+          ],
+        )
     );
   }
 }
+

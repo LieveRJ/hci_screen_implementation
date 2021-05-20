@@ -44,7 +44,7 @@ class _RentState extends State<Rent> {
                textAlign: TextAlign.center,
              ),
               Expanded(
-                child: Text(" 1. Select an item to rent \n 2. Click the button below to open the camera \n 3. Scan the barcode with the camera \n 4. Confirm your login and your scanned item(s) \n 5. Enjoy your item!",
+                child: Text(" 1. Select an item to rent \n 2. Click the button below to \n     open the camera \n 3. Scan the barcode with the \n     camera \n 4. Confirm your login and your \n     scanned item(s) \n 5. Enjoy your item!",
                   style: new TextStyle(
                   color: Colors.black,
                   fontSize: 30)),
