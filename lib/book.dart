@@ -140,7 +140,7 @@ class _BookState extends State<Book> {
                                                       label: Text("Mystery",
                                                           style: new TextStyle(color: Colors.black, fontSize: 30)),
                                                       style: ButtonStyle(
-                                                        backgroundColor: MaterialStateProperty.all<Color>(Colors.orange[200]),
+                                                        backgroundColor: MaterialStateProperty.all<Color>(Colors.indigo[200]),
                                                       )),
                                                 ),
                                               ),

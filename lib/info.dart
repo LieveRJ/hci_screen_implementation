@@ -34,18 +34,18 @@ class Information extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 new Text(
-                                  "    Opening times",
+                                  "               Opening times",
                                   style: new TextStyle(
                                     fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
                                   ),
-                                  textAlign: TextAlign.left,
+                                  textAlign: TextAlign.center,
                                 ),
                                 new Text(
-                                  "Additional Information     ",
+                                  "Additional Information                   ",
                                   style: new TextStyle(
                                     fontSize: 30.0, color: Colors.red, fontWeight: FontWeight.bold,
                                   ),
-                                  textAlign: TextAlign.right,
+                                  textAlign: TextAlign.center,
                                 ),
                               ],
                             ),
@@ -63,7 +63,7 @@ class Information extends StatelessWidget {
                                           borderRadius: new BorderRadius.circular(5.0),
                                           color: Colors.black.withOpacity(0.0),),
                                         child: new Column(
-                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                           children: <Widget>[
                                             new Text("MONDAY: 10:00 - 22:00 \n \n"
                                                 "TUESDAY: 10:00 - 22:00 \n \n"
@@ -72,7 +72,7 @@ class Information extends StatelessWidget {
                                                 "FRIDAY: 10:00 - 22:00 \n \n"
                                                 "SATURDAY: 10:00 - 22:00 \n \n"
                                                 "SUNDAY: 10:00 - 22:00 \n \n",
-                                                style: new TextStyle(color: Colors.black, fontSize: 20))
+                                                style: new TextStyle(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold))
                                           ],
                                         ),
                                       ),
@@ -150,7 +150,7 @@ class Information extends StatelessWidget {
                                                         color: Colors.black,
                                                       ),
                                                     ),
-                                                    new Text('Print and Copying',
+                                                    new Text('Printing and Copying',
                                                         style: new TextStyle(color: Colors.black, fontSize: 25))
                                                   ],
                                                 ),
