@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 
 class Movies extends StatefulWidget {
@@ -10,6 +11,7 @@ class _MoviesState extends State<Movies> {
   @override
   void initState(){
     super.initState();
+    SystemChrome.setEnabledSystemUIOverlays([]);
   }
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,15 +44,15 @@ class _MoviesState extends State<Movies> {
                     icon: Icon(Icons.search,
                       color: Colors.black,
                       size: 30.0,),
-                    label: Text("Search here",
+                    label: Text("Tap here to search",
                       style: new TextStyle(color: Colors.black, fontSize:30),
                       textAlign: TextAlign.center,),
                     style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all<Color>(Colors.grey),
+                      backgroundColor: MaterialStateProperty.all<Color>(Colors.black12),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                           RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(18.0),
-                              side: BorderSide(color: Colors.grey))),
+                              side: BorderSide(color: Colors.black12))),
                     )),),
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 10),
