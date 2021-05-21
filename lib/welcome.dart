@@ -25,12 +25,12 @@ class _WelcomeState extends State<Welcome> {
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
-      body: GestureDetector(
+      body: AnimatedOpacity(
+        opacity: opacityLevel,
+        duration: const Duration(seconds: 5),
+        child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: () => Navigator.pushNamed(context, '/home'),
-        child: AnimatedOpacity(
-                opacity: opacityLevel,
-                duration: const Duration(seconds: 5),
           child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.stretch,

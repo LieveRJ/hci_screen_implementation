@@ -46,11 +46,11 @@ class _HomeState extends State<Home> {
                     style: new TextStyle(color: Colors.black, fontSize:30),
                     textAlign: TextAlign.center,),
                   style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all<Color>(Colors.black12),
+                  backgroundColor: MaterialStateProperty.all<Color>(Colors.white60),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color: Colors.black12))),
+                          side: BorderSide(color: Colors.black))),
                   )),
       ),
             GridView.count(
